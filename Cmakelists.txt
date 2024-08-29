@@ -6,25 +6,23 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Ensure proper Python detection
-find_package(Python3 3.7 REQUIRED COMPONENTS Interpreter Development.Module Development.Embed)
+find_package(Python3 3.12 REQUIRED COMPONENTS Interpreter Development.Module Development.Embed)
 if (NOT Python3_FOUND)
-    message(FATAL_ERROR "Python 3.7 or higher is required but not found.")
+    message(FATAL_ERROR "Python 3.12 or higher is required but not found.")
 endif()
 include_directories(${Python3_INCLUDE_DIRS})
-link_directories(${Python3_LIBRARY_DIRS})
 
 # Find and include pybind11
-find_package(pybind11 REQUIRED PATHS /opt/homebrew/share/cmake/pybind11)
+find_package(pybind11 REQUIRED)
 if (NOT pybind11_FOUND)
     message(FATAL_ERROR "pybind11 is required but not found.")
 endif()
 
 # Find Eigen
-find_package(Eigen3 3.4 REQUIRED NO_MODULE PATHS /opt/homebrew/opt/eigen)
+find_package(Eigen3 3.4 REQUIRED NO_MODULE)
 if (NOT Eigen3_FOUND)
     message(FATAL_ERROR "Eigen3 is required but not found.")
 endif()
-include_directories(${EIGEN3_INCLUDE_DIR})
 
 # Add the Python module
 pybind11_add_module(lattice_crypto lattice_crypto_bindings.cpp)
@@ -32,8 +30,8 @@ pybind11_add_module(lattice_crypto lattice_crypto_bindings.cpp)
 # Ensure Eigen includes are properly set up
 target_include_directories(lattice_crypto PRIVATE ${EIGEN3_INCLUDE_DIR})
 
-# Link against Python libraries
-target_link_libraries(lattice_crypto PRIVATE ${Python3_LIBRARIES})
+# Link against Python libraries via pybind11
+target_link_libraries(lattice_crypto PRIVATE pybind11::module)
 
 # Additional compiler options for robustness
 if (CMAKE_CXX_COMPILER_ID MATCHES "Clang" OR CMAKE_CXX_COMPILER_ID MATCHES "GNU")

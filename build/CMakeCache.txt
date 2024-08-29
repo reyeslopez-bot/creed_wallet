@@ -210,9 +210,6 @@ CreedWallet_SOURCE_DIR:STATIC=/Users/apikorus/creed_wallet
 //The directory containing a CMake configuration file for Eigen3.
 Eigen3_DIR:PATH=/opt/homebrew/share/eigen3/cmake
 
-//Dependencies for the target
-lattice_crypto_LIB_DEPENDS:STATIC=general;/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/lib/libpython3.12.dylib;
-
 //The directory containing a CMake configuration file for pybind11.
 pybind11_DIR:PATH=/opt/homebrew/opt/pybind11/share/cmake/pybind11
 
@@ -349,7 +346,7 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12][/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12][/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/lib/libpython3.12.dylib][cfound components: Interpreter Development.Module Development.Embed ][v3.12.5(3.7)]
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12][/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12][/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/lib/libpython3.12.dylib][cfound components: Interpreter Development.Module Development.Embed ][v3.12.5(3.12)]
 //Test HAS_FLTO_THIN
 HAS_FLTO_THIN:INTERNAL=1
 //Python executable during the last CMake run

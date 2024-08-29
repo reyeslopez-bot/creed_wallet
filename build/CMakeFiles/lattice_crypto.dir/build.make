@@ -92,7 +92,6 @@ lattice_crypto_EXTERNAL_OBJECTS =
 
 lattice_crypto.cpython-312-darwin.so: CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o
 lattice_crypto.cpython-312-darwin.so: CMakeFiles/lattice_crypto.dir/build.make
-lattice_crypto.cpython-312-darwin.so: /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/lib/libpython3.12.dylib
 lattice_crypto.cpython-312-darwin.so: CMakeFiles/lattice_crypto.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/apikorus/creed_wallet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared module lattice_crypto.cpython-312-darwin.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lattice_crypto.dir/link.txt --verbose=$(VERBOSE)
