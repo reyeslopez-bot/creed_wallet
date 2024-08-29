@@ -1,3 +1,4 @@
+import base64
 import logging
 import time
 import subprocess
@@ -18,9 +19,7 @@ def run_command(command, cwd=None):
         cwd_display = cwd or os.getcwd()
         logging.info(f"Running command: {' '.join(command)} in {cwd_display}")
         result = subprocess.run(command, cwd=cwd, check=True, text=True, capture_output=True)
-        logging.info(f"Command output:\n{result.stdout}")
-        if result.stderr:
-            logging.warning(f"Command stderr:\n{result.stderr}")
+        log_command_output(result)
     except subprocess.CalledProcessError as e:
         logging.error(f"Command '{' '.join(command)}' failed with return code {e.returncode}")
         logging.error(f"Command output:\n{e.stdout}")
@@ -29,6 +28,12 @@ def run_command(command, cwd=None):
     except Exception as e:
         logging.exception(f"Unexpected error while running command: {' '.join(command)}")
         raise e
+
+def log_command_output(result):
+    """Log the output of a subprocess command."""
+    logging.info(f"Command output:\n{result.stdout}")
+    if result.stderr:
+        logging.warning(f"Command stderr:\n{result.stderr}")
 
 def clean_build_directory(build_dir='build'):
     """Clean up the build directory if it exists."""
@@ -60,12 +65,9 @@ def build_project():
         create_build_directory()
 
         logging.info("Running CMake...")
-        # Ensure CMake is instructed to generate the Makefile in the 'build' directory
         run_command(['cmake', f'-DCMAKE_PREFIX_PATH={os.popen("brew --prefix pybind11").read().strip()}', '-S', '.', '-B', 'build'], cwd='.')
 
-        # Check if Makefile was generated
         check_makefile()
-
         logging.info("Running Make...")
         run_command(['make'], cwd='build')
 
@@ -85,52 +87,67 @@ def create_wallet_with_rate_limit():
         print(f"Wallet creation is limited. Current address: {variables.acct.address}")
         return variables.acct
 
-    # Proceed to create a new wallet
     acct, encrypted_private_key = create_wallet()
     LAST_WALLET_CREATION_TIME = current_time
     return acct
 
+def encrypt_private_key(acct):
+    """Encrypt the private key using Fernet and lattice-based encryption."""
+    encryption_key = Encrypt.load_key()
+    private_key_hex = acct._private_key.hex()
+
+    # Encrypt the private key using Fernet
+    encrypted_private_key = Encrypt.encrypt_message(encryption_key, private_key_hex.encode('utf-8'))
+
+    # Encode to Base64 for safe storage and transmission
+    encrypted_private_key_b64 = base64.b64encode(encrypted_private_key).decode('utf-8')
+    variables.encrypted_private_key = encrypted_private_key_b64
+    logging.info(f"Encrypted private key (Base64): {encrypted_private_key_b64}")
+
+    # Utilize lattice-based encryption for further security
+    lattice_crypt = RingLWECrypto(512, 4096)
+    encrypted_lattice = lattice_crypt.encrypt(encrypted_private_key_b64.encode('utf-8'))  # Encode before lattice encryption
+    encrypted_lattice_b64 = base64.b64encode(encrypted_lattice).decode('utf-8')
+    logging.info(f"Lattice Encrypted Key (Base64): {encrypted_lattice_b64}")
+
+    return encrypted_private_key_b64, encrypted_lattice_b64
+def verify_lattice_encryption(encrypted_private_key_b64, encrypted_lattice_b64):
+    """Verify that the lattice-based encryption can be decrypted correctly."""
+    lattice_crypt = RingLWECrypto(512, 4096)
+
+    # Decode Base64 lattice-encrypted key
+    encrypted_lattice = base64.b64decode(encrypted_lattice_b64)
+    decrypted_lattice = lattice_crypt.decrypt(encrypted_lattice).decode('utf-8')
+
+    if decrypted_lattice != encrypted_private_key_b64:
+        logging.error("Lattice-based decryption failed.")
+        return False
+    else:
+        logging.info("Lattice-based decryption succeeded.")
+        return True
+
 def main():
     """Main function to build the project and create a wallet."""
-    setup_logging()  # Initialize logging
+    setup_logging()
     logging.info("Starting main function...")
 
     try:
-        build_project()  # Build the project
+        build_project()
     except Exception as e:
         logging.error(f"Build process failed and main process aborted: {e}")
-        return  # Abort the rest of the process if build fails
+        return
 
     try:
-        # Create wallet with rate limiting
         acct = create_wallet_with_rate_limit()
         logging.info(f"Wallet address: {acct.address}")
         print(f"Wallet address: {acct.address}")
 
-        # Load or generate the encryption key for Fernet
-        encryption_key = Encrypt.load_key()
+        encrypted_private_key, encrypted_lattice = encrypt_private_key(acct)
 
-        # Encrypt the private key using Fernet encryption
-        private_key = acct._private_key.hex()
-        encrypted_private_key = Encrypt.encrypt_message(encryption_key, private_key)
-
-        # Store the encrypted private key
-        variables.encrypted_private_key = encrypted_private_key
-        logging.info(f"Encrypted private key: {encrypted_private_key}")
-
-        # Utilize lattice-based encryption for further security
-        lattice_crypt = RingLWECrypto(512, 4096)
-        encrypted_lattice = lattice_crypt.encrypt(encrypted_private_key)
-        logging.info(f"Lattice Encrypted Key: {encrypted_lattice}")
-
-        # Decrypt the lattice-encrypted key to verify
-        decrypted_lattice = lattice_crypt.decrypt(encrypted_lattice)
-        if decrypted_lattice != encrypted_private_key:
-            logging.error("Lattice-based decryption failed.")
-        else:
-            logging.info("Lattice-based decryption succeeded.")
+        if verify_lattice_encryption(encrypted_private_key, encrypted_lattice):
             print("Wallet created and keys encrypted successfully.")
-
+        else:
+            print("Failed to verify encryption.")
     except Exception as e:
         logging.error(f"Failed to create wallet: {e}")
         print(f"Failed to create wallet: {e}")

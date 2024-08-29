@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/Users/apikorus/creed_wallet/build",
-  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -Dlattice_crypto_EXPORTS -I/opt/homebrew/include/eigen3 -isystem /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12 -isystem /opt/homebrew/include -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fPIC -fvisibility=hidden -Wall -Wextra -Wpedantic -o CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o -c /Users/apikorus/creed_wallet/lattice_crypto_bindings.cpp",
-  "file": "/Users/apikorus/creed_wallet/lattice_crypto_bindings.cpp",
-  "output": "CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o"
-}
-]

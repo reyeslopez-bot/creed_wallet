@@ -1,6 +1,6 @@
 #include <pybind11/pybind11.h>
 #include <pybind11/eigen.h>
-#include "lattice_crypto.cpp"  // Include the C++ file directly
+#include "lattice_crypto.cpp"  // Include the C++ file directly if necessary
 
 namespace py = pybind11;
 

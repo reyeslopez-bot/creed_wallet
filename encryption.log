@@ -369,3 +369,832 @@ make: *** No targets specified and no makefile found.  Stop.
 2024-08-29 11:55:28,638 - ERROR - Failed to connect to Infura's Ethereum mainnet.
 2024-08-29 11:55:28,638 - ERROR - Connection error: Failed to connect to Infura's Ethereum mainnet.
 2024-08-29 11:55:28,638 - ERROR - Failed to create wallet: Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 13:38:42,911 - INFO - Encryption key loaded from secret.key
+2024-08-29 13:38:43,296 - INFO - Logging initialized.
+2024-08-29 13:38:43,296 - INFO - Starting main function...
+2024-08-29 13:38:43,296 - INFO - Starting the build process...
+2024-08-29 13:38:43,296 - INFO - Cleaning previous build directory: build
+2024-08-29 13:38:43,296 - INFO - Running command: rm -rf build in /Users/apikorus/creed_wallet
+2024-08-29 13:38:43,303 - INFO - Command output:
+
+2024-08-29 13:38:43,303 - INFO - Creating new build directory: build
+2024-08-29 13:38:43,303 - INFO - Running CMake...
+2024-08-29 13:38:43,328 - INFO - Running command: cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pybind11 -S . -B build in .
+2024-08-29 13:38:44,010 - INFO - Command output:
+-- The CXX compiler identification is AppleClang 15.0.0.15000309
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: /opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12 (found suitable version "3.12.5", minimum required is "3.7") found components: Interpreter Development.Module Development.Embed
+-- Performing Test HAS_FLTO_THIN
+-- Performing Test HAS_FLTO_THIN - Success
+-- Found pybind11: /opt/homebrew/opt/pybind11/include (found version "2.13.5")
+-- CMake Version: 3.29.3
+-- Project: CreedWallet
+-- C++ Standard: 17
+-- Python Version: 3.12.5
+-- Eigen3 Version: 3.4.0
+-- Pybind11 Version: 2.13.5
+-- Eigen3 Include Directory: /opt/homebrew/include/eigen3
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/apikorus/creed_wallet/build
+
+2024-08-29 13:38:44,010 - INFO - Running Make...
+2024-08-29 13:38:44,010 - INFO - Running command: make in build
+2024-08-29 13:38:46,358 - INFO - Command output:
+[ 50%] Building CXX object CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o
+[100%] Linking CXX shared module lattice_crypto.cpython-312-darwin.so
+[100%] Built target lattice_crypto
+
+2024-08-29 13:38:46,358 - INFO - Build completed successfully.
+2024-08-29 13:38:46,358 - INFO - Attempting to connect to Infura with endpoint: https://mainnet.infura.io/v3/c41054ecfd8f45eb8b9952fad208f67a
+2024-08-29 13:38:47,360 - INFO - Successfully connected to Infura's Ethereum mainnet.
+2024-08-29 13:38:47,383 - INFO - New Ethereum account created. Address: 0x0968f1fD3e957702C5Ab4f74c77F0ecE959f6D4C
+2024-08-29 13:38:47,384 - INFO - Encryption key loaded from secret.key
+2024-08-29 13:38:47,384 - INFO - Encryption key loaded successfully.
+2024-08-29 13:38:47,384 - ERROR - An unexpected error occurred during wallet creation: 'LocalAccount' object has no attribute 'privateKey'
+2024-08-29 13:38:47,384 - ERROR - Failed to create wallet: 'LocalAccount' object has no attribute 'privateKey'
+2024-08-29 13:41:21,117 - INFO - Encryption key loaded from secret.key
+2024-08-29 13:41:21,369 - INFO - Logging initialized.
+2024-08-29 13:41:21,370 - INFO - Starting main function...
+2024-08-29 13:41:21,370 - INFO - Starting the build process...
+2024-08-29 13:41:21,370 - INFO - Cleaning previous build directory: build
+2024-08-29 13:41:21,370 - INFO - Running command: rm -rf build in /Users/apikorus/creed_wallet
+2024-08-29 13:41:21,375 - INFO - Command output:
+
+2024-08-29 13:41:21,375 - INFO - Creating new build directory: build
+2024-08-29 13:41:21,375 - INFO - Running CMake...
+2024-08-29 13:41:21,397 - INFO - Running command: cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pybind11 -S . -B build in .
+2024-08-29 13:41:22,044 - INFO - Command output:
+-- The CXX compiler identification is AppleClang 15.0.0.15000309
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: /opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12 (found suitable version "3.12.5", minimum required is "3.7") found components: Interpreter Development.Module Development.Embed
+-- Performing Test HAS_FLTO_THIN
+-- Performing Test HAS_FLTO_THIN - Success
+-- Found pybind11: /opt/homebrew/opt/pybind11/include (found version "2.13.5")
+-- CMake Version: 3.29.3
+-- Project: CreedWallet
+-- C++ Standard: 17
+-- Python Version: 3.12.5
+-- Eigen3 Version: 3.4.0
+-- Pybind11 Version: 2.13.5
+-- Eigen3 Include Directory: /opt/homebrew/include/eigen3
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/apikorus/creed_wallet/build
+
+2024-08-29 13:41:22,044 - INFO - Running Make...
+2024-08-29 13:41:22,044 - INFO - Running command: make in build
+2024-08-29 13:41:24,225 - INFO - Command output:
+[ 50%] Building CXX object CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o
+[100%] Linking CXX shared module lattice_crypto.cpython-312-darwin.so
+[100%] Built target lattice_crypto
+
+2024-08-29 13:41:24,225 - INFO - Build completed successfully.
+2024-08-29 13:41:24,933 - INFO - Successfully connected to Infura's Ethereum mainnet.
+2024-08-29 13:41:24,947 - INFO - New Ethereum account created. Address: 0x9AF550036132F2698EfdE7786F62114cD2744258
+2024-08-29 13:41:24,947 - INFO - Encryption key loaded from secret.key
+2024-08-29 13:41:24,947 - ERROR - An error occurred during wallet creation: 'LocalAccount' object has no attribute 'private_key'
+2024-08-29 13:41:24,947 - ERROR - Failed to create wallet: 'LocalAccount' object has no attribute 'private_key'
+2024-08-29 13:45:53,059 - INFO - Encryption key loaded from secret.key
+2024-08-29 13:45:53,407 - INFO - Logging initialized.
+2024-08-29 13:45:53,407 - INFO - Starting main function...
+2024-08-29 13:45:53,407 - INFO - Starting the build process...
+2024-08-29 13:45:53,407 - INFO - Cleaning previous build directory: build
+2024-08-29 13:45:53,407 - INFO - Running command: rm -rf build in /Users/apikorus/creed_wallet
+2024-08-29 13:45:53,413 - INFO - Command output:
+
+2024-08-29 13:45:53,413 - INFO - Creating new build directory: build
+2024-08-29 13:45:53,413 - INFO - Running CMake...
+2024-08-29 13:45:53,435 - INFO - Running command: cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pybind11 -S . -B build in .
+2024-08-29 13:45:54,299 - INFO - Command output:
+-- The CXX compiler identification is AppleClang 15.0.0.15000309
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: /opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12 (found suitable version "3.12.5", minimum required is "3.7") found components: Interpreter Development.Module Development.Embed
+-- Performing Test HAS_FLTO_THIN
+-- Performing Test HAS_FLTO_THIN - Success
+-- Found pybind11: /opt/homebrew/opt/pybind11/include (found version "2.13.5")
+-- CMake Version: 3.29.3
+-- Project: CreedWallet
+-- C++ Standard: 17
+-- Python Version: 3.12.5
+-- Eigen3 Version: 3.4.0
+-- Pybind11 Version: 2.13.5
+-- Eigen3 Include Directory: /opt/homebrew/include/eigen3
+-- Configuring done (0.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/apikorus/creed_wallet/build
+
+2024-08-29 13:45:54,299 - INFO - Running Make...
+2024-08-29 13:45:54,299 - INFO - Running command: make in build
+2024-08-29 13:45:56,706 - INFO - Command output:
+[ 50%] Building CXX object CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o
+[100%] Linking CXX shared module lattice_crypto.cpython-312-darwin.so
+[100%] Built target lattice_crypto
+
+2024-08-29 13:45:56,706 - INFO - Build completed successfully.
+2024-08-29 13:45:57,395 - INFO - Successfully connected to Infura's Ethereum mainnet.
+2024-08-29 13:45:57,415 - INFO - New Ethereum account created. Address: 0xbC1b02e65CbDABfcf5Ca359aF9a7893Dc4660879
+2024-08-29 13:45:57,416 - INFO - Encryption key loaded from secret.key
+2024-08-29 13:45:57,419 - INFO - Message encrypted successfully.
+2024-08-29 13:45:57,420 - INFO - Private key encrypted successfully with Fernet.
+2024-08-29 13:45:57,489 - ERROR - An error occurred during wallet creation: No module named 'numpy'
+2024-08-29 13:45:57,489 - ERROR - Failed to create wallet: No module named 'numpy'
+2024-08-29 13:48:22,852 - INFO - Encryption key loaded from secret.key
+2024-08-29 13:48:23,178 - INFO - Logging initialized.
+2024-08-29 13:48:23,178 - INFO - Starting main function...
+2024-08-29 13:48:23,178 - INFO - Starting the build process...
+2024-08-29 13:48:23,178 - INFO - Cleaning previous build directory: build
+2024-08-29 13:48:23,178 - INFO - Running command: rm -rf build in /Users/apikorus/creed_wallet
+2024-08-29 13:48:23,184 - INFO - Command output:
+
+2024-08-29 13:48:23,184 - INFO - Creating new build directory: build
+2024-08-29 13:48:23,184 - INFO - Running CMake...
+2024-08-29 13:48:23,206 - INFO - Running command: cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pybind11 -S . -B build in .
+2024-08-29 13:48:23,871 - INFO - Command output:
+-- The CXX compiler identification is AppleClang 15.0.0.15000309
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: /opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12 (found suitable version "3.12.5", minimum required is "3.7") found components: Interpreter Development.Module Development.Embed
+-- Performing Test HAS_FLTO_THIN
+-- Performing Test HAS_FLTO_THIN - Success
+-- Found pybind11: /opt/homebrew/opt/pybind11/include (found version "2.13.5")
+-- CMake Version: 3.29.3
+-- Project: CreedWallet
+-- C++ Standard: 17
+-- Python Version: 3.12.5
+-- Eigen3 Version: 3.4.0
+-- Pybind11 Version: 2.13.5
+-- Eigen3 Include Directory: /opt/homebrew/include/eigen3
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/apikorus/creed_wallet/build
+
+2024-08-29 13:48:23,871 - INFO - Running Make...
+2024-08-29 13:48:23,871 - INFO - Running command: make in build
+2024-08-29 13:48:26,138 - INFO - Command output:
+[ 50%] Building CXX object CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o
+[100%] Linking CXX shared module lattice_crypto.cpython-312-darwin.so
+[100%] Built target lattice_crypto
+
+2024-08-29 13:48:26,139 - INFO - Build completed successfully.
+2024-08-29 13:48:26,794 - INFO - Successfully connected to Infura's Ethereum mainnet.
+2024-08-29 13:48:26,811 - INFO - New Ethereum account created. Address: 0x3B4955dF468EBB0F81234CC62DeF987deA940F4B
+2024-08-29 13:48:26,811 - INFO - Encryption key loaded from secret.key
+2024-08-29 13:48:26,811 - INFO - Message encrypted successfully.
+2024-08-29 13:48:26,811 - INFO - Private key encrypted successfully with Fernet.
+2024-08-29 13:48:26,884 - ERROR - An error occurred during wallet creation: No module named 'numpy'
+2024-08-29 13:48:26,884 - ERROR - Failed to create wallet: No module named 'numpy'
+2024-08-29 13:50:33,704 - INFO - Encryption key loaded from secret.key
+2024-08-29 13:50:34,027 - INFO - Logging initialized.
+2024-08-29 13:50:34,027 - INFO - Starting main function...
+2024-08-29 13:50:34,027 - INFO - Starting the build process...
+2024-08-29 13:50:34,027 - INFO - Cleaning previous build directory: build
+2024-08-29 13:50:34,027 - INFO - Running command: rm -rf build in /Users/apikorus/creed_wallet
+2024-08-29 13:50:34,034 - INFO - Command output:
+
+2024-08-29 13:50:34,034 - INFO - Creating new build directory: build
+2024-08-29 13:50:34,034 - INFO - Running CMake...
+2024-08-29 13:50:34,057 - INFO - Running command: cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pybind11 -S . -B build in .
+2024-08-29 13:50:34,752 - INFO - Command output:
+-- The CXX compiler identification is AppleClang 15.0.0.15000309
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: /opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12 (found suitable version "3.12.5", minimum required is "3.7") found components: Interpreter Development.Module Development.Embed
+-- Performing Test HAS_FLTO_THIN
+-- Performing Test HAS_FLTO_THIN - Success
+-- Found pybind11: /opt/homebrew/opt/pybind11/include (found version "2.13.5")
+-- CMake Version: 3.29.3
+-- Project: CreedWallet
+-- C++ Standard: 17
+-- Python Version: 3.12.5
+-- Eigen3 Version: 3.4.0
+-- Pybind11 Version: 2.13.5
+-- Eigen3 Include Directory: /opt/homebrew/include/eigen3
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/apikorus/creed_wallet/build
+
+2024-08-29 13:50:34,752 - INFO - Running Make...
+2024-08-29 13:50:34,752 - INFO - Running command: make in build
+2024-08-29 13:50:37,247 - INFO - Command output:
+[ 50%] Building CXX object CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o
+[100%] Linking CXX shared module lattice_crypto.cpython-312-darwin.so
+[100%] Built target lattice_crypto
+
+2024-08-29 13:50:37,247 - INFO - Build completed successfully.
+2024-08-29 13:50:37,897 - INFO - Successfully connected to Infura's Ethereum mainnet.
+2024-08-29 13:50:37,905 - INFO - New Ethereum account created. Address: 0xC1bCC87CB6C589d59f06252484B0993fB04960Af
+2024-08-29 13:50:37,905 - INFO - Encryption key loaded from secret.key
+2024-08-29 13:50:37,905 - INFO - Message encrypted successfully.
+2024-08-29 13:50:37,905 - INFO - Private key encrypted successfully with Fernet.
+2024-08-29 13:50:38,393 - INFO - Private key additionally encrypted using lattice-based cryptography.
+2024-08-29 13:50:38,393 - INFO - Wallet address: 0xC1bCC87CB6C589d59f06252484B0993fB04960Af
+2024-08-29 13:50:38,393 - INFO - Encryption key loaded from secret.key
+2024-08-29 13:50:38,394 - INFO - Message encrypted successfully.
+2024-08-29 13:50:38,394 - INFO - Encrypted private key: b'gAAAAABm0FJ-zzV2otCHhEOqq0eA0uvBzjkXkuFrFGKSGjkENP_sklSnE0i2dZMDHiiqKHSETT-8i0HATrA0ZNDJppV0nUTIyNvnmODfY_oertkeiQ8WunVRy_Ioo0X-toBeFfs0UVpxacIYVuHNfo6ZzRU7HP9L4as0qd8XrJW5nIdusX060gk='
+2024-08-29 13:50:38,460 - INFO - Lattice Encrypted Key: (array([[4095,    0,    0,    0,    0,    0,    0,    0,    0, 4095, 4095,
+        4095, 4095, 4095, 4095, 4095, 4095,    0,    0,    0, 4095, 4095,
+           0,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095, 4095,
+        4095, 4095,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095,
+        4095, 4095,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095,
+        4095,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095,    0,
+        4095,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095, 4095,
+        4095,    0,    0, 4095, 4095,    0,    0,    0,    0,    0,    0,
+           0,    0, 4095, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,
+           0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095, 4095,    0,
+           0,    0,    0, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,
+           0,    0, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,
+           0,    0, 4095,    0,    0, 4095, 4095, 4095, 4095, 4095, 4095,
+        4095, 4095, 4095,    0,    0,    0,    0, 4095,    0,    0,    0,
+           0, 4095, 4095, 4095, 4095,    0,    0,    0, 4095,    0,    0,
+           0, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0,
+           0, 4095, 4095, 4095, 4095,    0,    0,    0,    0,    0,    0,
+        4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0,    0,    0,
+           0, 4095, 4095, 4095, 4095, 4095, 4095,    0, 4095, 4095, 4095,
+           0,    0,    0, 4095, 4095,    0,    0,    0,    0, 4095, 4095,
+        4095, 4095,    0,    0, 4095,    0,    0,    0,    0,    0, 4095,
+        4095, 4095, 4095,    0,    0,    0,    0,    0,    0,    0, 4095,
+        4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0, 4095, 4095,
+        4095, 4095,    0,    0,    0,    0,    0,    0, 4095, 4095, 4095,
+        4095, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0,
+        4095, 4095,    0,    0,    0, 4095, 4095, 4095, 4095, 4095,    0,
+           0, 4095,    0,    0,    0,    0,    0, 4095, 4095, 4095, 4095,
+        4095,    0,    0,    0,    0,    0,    0, 4095, 4095, 4095, 4095,
+        4095,    0,    0,    0,    0,    0, 4095, 4095, 4095, 4095,    0,
+           0,    0,    0,    0,    0, 4095,    0, 4095, 4095, 4095, 4095,
+        4095, 4095,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,
+           0,    0,    0, 4095,    0, 4095, 4095, 4095, 4095, 4095,    0,
+           0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095,    0,    0,
+           0,    0,    0, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,
+           0,    0,    0, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,
+           0, 4095,    0,    0,    0,    0,    0,    0, 4095, 4095, 4095,
+        4095, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0, 4095,
+           0,    0, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0,
+           0, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0,    0,
+           0, 4095, 4095, 4095, 4095,    0,    0,    0,    0,    0, 4095,
+        4095, 4095, 4095, 4095, 4095, 4095,    0,    0, 4095,    0,    0,
+           0,    0,    0,    0,    0, 4095, 4095,    0,    0,    0, 4095,
+        4095, 4095,    0,    0,    0,    0,    0,    0,    0,    0, 4095,
+        4095, 4095, 4095, 4095,    0,    0,    0,    0,    0,    0,    0,
+        4095, 4095, 4095,    0,    0,    0,    0,    0,    0, 4095, 4095,
+        4095, 4095, 4095,    0,    0,    0]], dtype=int32), array([[4198,   65,   65,   65,   65,   65,   66,  109,   48,   70, 4169,
+        4140, 4217, 4217, 4181, 4145, 4206,  116,   67,   72,  104,   69,
+        4174, 4208, 4208, 4143, 4196, 4160,   48,  117,  118,   66,  122,
+         106, 4202, 4183, 4202, 4212,   70,  114,   70,   71,   75, 4178,
+        4166, 4201, 4202, 4164, 4173, 4175, 4190,  115,  107,  108,   83,
+        4205, 4164,   48,  105, 4145, 4195, 4185, 4172, 4163,   72,  105,
+         105,  113, 4170,   72,   83,   69,   84, 4179, 4140, 4151, 4200,
+        4143, 4167, 4160,   84,  114,   65,   48,   90,   78, 4163, 4169,
+        4207, 4207, 4181,   48,  110,   85,   84,   73, 4216, 4173, 4213,
+        4205, 4204,   79,   68,  102,   89,   95, 4206, 4196, 4209, 4211,
+        4202, 4196, 4200,   81,   56,   87,  117,  110,   86,   82, 4216,
+        4190, 4168, 4206, 4206, 4143, 4183, 4140, 4211,  111,   66,  101,
+          70,  102,  115,   48,   85, 4181, 4207, 4215, 4192, 4194, 4168,
+          89,   86,  117,   72,   78,  102, 4206, 4149, 4185, 4217, 4177,
+          85,   55,   72,   80,   57, 4171, 4147, 4192, 4210, 4143, 4208,
+         100,   56,   88,  114,   74,   87, 4148, 4205, 4168, 4195,  117,
+         115,   88,   48,   54,   48,  103,  107, 4156, 4095, 4095, 4095,
+        4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0,    0,    0,
+           0, 4095, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,
+           0,    0,    0, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,
+           0,    0, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095,    0,
+           0,    0,    0, 4095, 4095, 4095, 4095,    0,    0,    0,    0,
+           0,    0,    0,    0, 4095, 4095, 4095, 4095,    0, 4095, 4095,
+        4095, 4095,    0,    0,    0,    0,    0, 4095,    0,    0, 4095,
+        4095, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0,    0,
+        4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0,    0,    0,
+           0, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0,    0,
+        4095, 4095, 4095, 4095, 4095,    0,    0, 4095,    0,    0,    0,
+           0, 4095, 4095, 4095,    0, 4095, 4095, 4095, 4095,    0,    0,
+           0,    0,    0,    0, 4095,    0,    0, 4095, 4095, 4095, 4095,
+        4095, 4095, 4095,    0,    0,    0,    0,    0, 4095, 4095, 4095,
+        4095, 4095, 4095, 4095,    0,    0,    0,    0,    0, 4095, 4095,
+        4095, 4095,    0, 4095,    0,    0,    0,    0, 4095, 4095, 4095,
+        4095, 4095, 4095, 4095,    0,    0,    0,    0,    0, 4095, 4095,
+        4095, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0,
+           0,    0,    0, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0, 4095, 4095, 4095,
+           0,    0,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095,
+        4095,    0,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095,
+           0,    0,    0,    0,    0,    0,    0,    0, 4095, 4095, 4095,
+        4095,    0, 4095, 4095, 4095,    0,    0,    0,    0,    0, 4095,
+        4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,
+           0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095,    0,    0,
+           0,    0, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095,    0,
+           0,    0,    0,    0, 4095, 4095, 4095, 4095,    0,    0,    0,
+           0,    0,    0,    0,    0, 4095, 4095, 4095, 4095,    0,    0,
+        4095, 4095, 4095,    0,    0,    0]], dtype=int32))
+2024-08-29 13:50:38,461 - ERROR - Failed to create wallet: 'utf-8' codec can't decode byte 0xff in position 184: invalid start byte
+2024-08-29 13:54:09,465 - INFO - Encryption key loaded from secret.key
+2024-08-29 13:54:09,814 - INFO - Logging initialized.
+2024-08-29 13:54:09,814 - INFO - Starting main function...
+2024-08-29 13:54:09,814 - INFO - Starting the build process...
+2024-08-29 13:54:09,814 - INFO - Cleaning previous build directory: build
+2024-08-29 13:54:09,814 - INFO - Running command: rm -rf build in /Users/apikorus/creed_wallet
+2024-08-29 13:54:09,820 - INFO - Command output:
+
+2024-08-29 13:54:09,821 - INFO - Creating new build directory: build
+2024-08-29 13:54:09,821 - INFO - Running CMake...
+2024-08-29 13:54:09,844 - INFO - Running command: cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pybind11 -S . -B build in .
+2024-08-29 13:54:10,529 - INFO - Command output:
+-- The CXX compiler identification is AppleClang 15.0.0.15000309
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: /opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12 (found suitable version "3.12.5", minimum required is "3.7") found components: Interpreter Development.Module Development.Embed
+-- Performing Test HAS_FLTO_THIN
+-- Performing Test HAS_FLTO_THIN - Success
+-- Found pybind11: /opt/homebrew/opt/pybind11/include (found version "2.13.5")
+-- CMake Version: 3.29.3
+-- Project: CreedWallet
+-- C++ Standard: 17
+-- Python Version: 3.12.5
+-- Eigen3 Version: 3.4.0
+-- Pybind11 Version: 2.13.5
+-- Eigen3 Include Directory: /opt/homebrew/include/eigen3
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/apikorus/creed_wallet/build
+
+2024-08-29 13:54:10,529 - INFO - Running Make...
+2024-08-29 13:54:10,529 - INFO - Running command: make in build
+2024-08-29 13:54:12,927 - INFO - Command output:
+[ 50%] Building CXX object CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o
+[100%] Linking CXX shared module lattice_crypto.cpython-312-darwin.so
+[100%] Built target lattice_crypto
+
+2024-08-29 13:54:12,927 - INFO - Build completed successfully.
+2024-08-29 13:54:13,576 - INFO - Successfully connected to Infura's Ethereum mainnet.
+2024-08-29 13:54:13,593 - INFO - New Ethereum account created. Address: 0x6D6FCf0172bA4037BB61D5F6A7063080a43c6FDF
+2024-08-29 13:54:13,593 - INFO - Encryption key loaded from secret.key
+2024-08-29 13:54:13,595 - INFO - Message encrypted successfully.
+2024-08-29 13:54:13,595 - INFO - Private key encrypted successfully with Fernet.
+2024-08-29 13:54:13,713 - INFO - Private key additionally encrypted using lattice-based cryptography.
+2024-08-29 13:54:13,713 - INFO - Wallet address: 0x6D6FCf0172bA4037BB61D5F6A7063080a43c6FDF
+2024-08-29 13:54:13,713 - INFO - Encryption key loaded from secret.key
+2024-08-29 13:54:13,713 - ERROR - Failed to create wallet: 'bytes' object has no attribute 'encode'
+2024-08-29 13:59:33,070 - INFO - Encryption key loaded from secret.key
+2024-08-29 13:59:33,423 - INFO - Logging initialized.
+2024-08-29 13:59:33,423 - INFO - Starting main function...
+2024-08-29 13:59:33,423 - INFO - Starting the build process...
+2024-08-29 13:59:33,423 - INFO - Cleaning previous build directory: build
+2024-08-29 13:59:33,424 - INFO - Running command: rm -rf build in /Users/apikorus/creed_wallet
+2024-08-29 13:59:33,429 - INFO - Command output:
+
+2024-08-29 13:59:33,429 - INFO - Creating new build directory: build
+2024-08-29 13:59:33,430 - INFO - Running CMake...
+2024-08-29 13:59:33,453 - INFO - Running command: cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pybind11 -S . -B build in .
+2024-08-29 13:59:34,133 - INFO - Command output:
+-- The CXX compiler identification is AppleClang 15.0.0.15000309
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: /opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12 (found suitable version "3.12.5", minimum required is "3.7") found components: Interpreter Development.Module Development.Embed
+-- Performing Test HAS_FLTO_THIN
+-- Performing Test HAS_FLTO_THIN - Success
+-- Found pybind11: /opt/homebrew/opt/pybind11/include (found version "2.13.5")
+-- CMake Version: 3.29.3
+-- Project: CreedWallet
+-- C++ Standard: 17
+-- Python Version: 3.12.5
+-- Eigen3 Version: 3.4.0
+-- Pybind11 Version: 2.13.5
+-- Eigen3 Include Directory: /opt/homebrew/include/eigen3
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/apikorus/creed_wallet/build
+
+2024-08-29 13:59:34,133 - INFO - Running Make...
+2024-08-29 13:59:34,133 - INFO - Running command: make in build
+2024-08-29 13:59:36,382 - INFO - Command output:
+[ 50%] Building CXX object CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o
+[100%] Linking CXX shared module lattice_crypto.cpython-312-darwin.so
+[100%] Built target lattice_crypto
+
+2024-08-29 13:59:36,383 - INFO - Build completed successfully.
+2024-08-29 13:59:37,043 - INFO - Successfully connected to Infura's Ethereum mainnet.
+2024-08-29 13:59:37,060 - INFO - New Ethereum account created. Address: 0x5A74b02BD06a36d578C27890D5e54d8Ac7BaFB5F
+2024-08-29 13:59:37,060 - INFO - Encryption key loaded from secret.key
+2024-08-29 13:59:37,061 - INFO - Message encrypted successfully.
+2024-08-29 13:59:37,061 - INFO - Private key encrypted successfully with Fernet.
+2024-08-29 13:59:37,181 - INFO - Private key additionally encrypted using lattice-based cryptography.
+2024-08-29 13:59:37,181 - INFO - Wallet address: 0x5A74b02BD06a36d578C27890D5e54d8Ac7BaFB5F
+2024-08-29 13:59:37,181 - INFO - Encryption key loaded from secret.key
+2024-08-29 13:59:37,181 - INFO - Message encrypted successfully.
+2024-08-29 13:59:37,181 - INFO - Encrypted private key (Base64): Z0FBQUFBQm0wRlNaVTBFSnFNTUpkakxiSVJPOS0waUtYZ0pjRDNTVkNUQVdwUlpFWmJjUERTNUJ1M0Iwd1RjanRnM0Qwc01MLXd0eHl3TVJkSGJYTW1kUmQ3ZXdpdTV6U3gtTlYtRjcxczFrNVkyZjJCMTlmMDJvV2xMZUthSThqY0ZNWTQxeGh4T25iaW1XenVCWUhuR21kT2phTUdIRHVLYmI3VFFBV2cwRE1UMFJyTWNzR29RPQ==
+2024-08-29 13:59:37,236 - INFO - Lattice Encrypted Key: (array([[4095, 4095, 4095,    0,    0,    0,    0,    0,    0,    0, 4095,
+        4095, 4095, 4095, 4095, 4095, 4095,    0,    0, 4095, 4095, 4095,
+           0,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095, 4095,
+        4095,    0,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095,
+           0,    0,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095,
+           0,    0,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095,
+        4095,    0,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095,
+        4095,    0,    0, 4095, 4095,    0, 4095, 4095,    0,    0,    0,
+           0,    0, 4095, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,
+           0,    0,    0, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,
+           0,    0,    0, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,
+           0,    0,    0, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,
+           0,    0,    0,    0,    0, 4095, 4095, 4095,    0,    0, 4095,
+        4095, 4095,    0, 4095,    0,    0,    0,    0,    0,    0,    0,
+           0, 4095, 4095, 4095, 4095,    0,    0,    0, 4095,    0,    0,
+           0, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0, 4095,
+        4095, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0,    0,
+           0, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0,    0,
+           0, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,    0, 4095,
+           0,    0,    0, 4095, 4095,    0,    0,    0,    0, 4095, 4095,
+        4095, 4095,    0,    0, 4095, 4095,    0,    0,    0,    0, 4095,
+        4095, 4095, 4095,    0,    0,    0,    0,    0,    0,    0, 4095,
+        4095, 4095, 4095,    0,    0,    0,    0,    0,    0, 4095, 4095,
+        4095, 4095, 4095,    0,    0,    0,    0,    0,    0,    0, 4095,
+        4095, 4095, 4095, 4095,    0, 4095, 4095,    0,    0,    0, 4095,
+        4095,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095,    0,
+           0, 4095,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095,
+           0,    0,    0,    0,    0,    0,    0, 4095, 4095, 4095, 4095,
+           0,    0,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095,
+           0,    0,    0,    0,    0,    0,    0, 4095, 4095, 4095, 4095,
+        4095, 4095,    0,    0,    0, 4095, 4095,    0,    0,    0,    0,
+           0,    0,    0, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,
+           0,    0,    0, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,
+           0,    0,    0,    0, 4095, 4095, 4095, 4095,    0,    0,    0,
+           0,    0,    0, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,
+           0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095,    0,    0,
+           0, 4095,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0, 4095,
+           0,    0, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0,
+        4095, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0,
+           0, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0,    0,
+        4095, 4095, 4095, 4095, 4095, 4095, 4095,    0, 4095,    0,    0,
+           0, 4095,    0,    0,    0, 4095, 4095,    0,    0,    0, 4095,
+        4095, 4095,    0,    0,    0,    0, 4095, 4095,    0,    0, 4095,
+        4095, 4095, 4095, 4095,    0,    0,    0,    0, 4095, 4095, 4095,
+        4095, 4095, 4095, 4095,    0,    0,    0,    0,    0, 4095, 4095,
+        4095, 4095, 4095,    0,    0,    0]], dtype=int32), array([[ 103,   65,   65, 4160, 4160, 4160, 4161, 4204, 4143,   70,   83,
+          90,   85,   48,   69,   74,  113, 4172, 4172, 4169, 4195, 4201,
+          76, 4193, 4168, 4177,   79,   57,   45,   48,  105, 4170, 4183,
+        4198, 4169, 4194, 4163, 4146, 4178,   86, 4162, 4179,   65,   87,
+         112,   82,   90, 4164, 4185, 4193,   99,   80, 4163, 4178,   53,
+          66, 4212, 4146, 4161, 4143,  119,   84,   99,  106,  116, 4198,
+          51, 4163, 4143, 4210, 4172, 4171,   45,  119,  116,  120,  121,
+         119, 4172, 4177, 4195, 4167, 4193,   88, 4172, 4204, 4195, 4177,
+        4195,   55,  101,  119,  105,  117,   53,  122, 4178, 4215, 4140,
+        4173,   86, 4140, 4165, 4150,   49,  115,   49,  107,   53, 4184,
+        4145, 4197, 4145,   66,   49,   57,  102,   48, 4145, 4206, 4182,
+        4203, 4171, 4196,   75,   97,   73,   56,  106,   99, 4165, 4172,
+        4184, 4147, 4144, 4215, 4199,  120,   79,  110,   98,  105,  109,
+        4182, 4217, 4212,   66, 4184, 4167, 4205,   71,  109,  100,   79,
+         106,   97,   77,   71,   72, 4163, 4212, 4170,   98, 4193, 4150,
+        4179,   81,   65,   87,  103,   48,   68,   77,   84, 4143, 4177,
+        4209, 4172,   99,  115,   71, 4206, 4176, 4156, 4095, 4095, 4095,
+           0,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095, 4095,
+        4095,    0,    0,    0,    0,    0,    0, 4095, 4095, 4095, 4095,
+        4095, 4095, 4095,    0,    0,    0, 4095, 4095, 4095,    0,    0,
+           0, 4095, 4095, 4095, 4095,    0, 4095, 4095, 4095,    0,    0,
+           0,    0,    0, 4095,    0,    0,    0, 4095, 4095, 4095,    0,
+           0,    0, 4095, 4095, 4095,    0, 4095, 4095, 4095,    0,    0,
+           0,    0, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095,    0,
+           0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095, 4095, 4095,
+           0,    0,    0, 4095, 4095,    0,    0,    0,    0, 4095, 4095,
+        4095, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0,    0,
+           0,    0,    0,    0, 4095, 4095, 4095,    0,    0,    0, 4095,
+        4095,    0, 4095, 4095, 4095, 4095,    0,    0,    0,    0,    0,
+        4095, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0,
+           0,    0, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0, 4095,
+           0,    0,    0,    0,    0,    0,    0, 4095, 4095, 4095, 4095,
+        4095, 4095, 4095,    0, 4095,    0,    0,    0,    0,    0,    0,
+        4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0, 4095, 4095,
+        4095, 4095, 4095,    0,    0,    0,    0,    0,    0, 4095, 4095,
+        4095, 4095, 4095,    0,    0,    0,    0,    0,    0, 4095, 4095,
+        4095, 4095, 4095, 4095, 4095,    0, 4095, 4095,    0,    0,    0,
+           0,    0,    0,    0,    0, 4095, 4095, 4095, 4095,    0,    0,
+           0, 4095,    0,    0,    0,    0,    0, 4095, 4095, 4095, 4095,
+        4095, 4095, 4095, 4095,    0,    0, 4095, 4095, 4095, 4095,    0,
+           0, 4095,    0,    0,    0,    0, 4095, 4095, 4095, 4095,    0,
+           0,    0,    0,    0,    0,    0,    0, 4095, 4095, 4095, 4095,
+        4095, 4095, 4095, 4095, 4095,    0,    0,    0, 4095, 4095,    0,
+           0,    0, 4095, 4095, 4095, 4095,    0,    0,    0, 4095,    0,
+           0,    0,    0,    0, 4095, 4095, 4095,    0, 4095, 4095, 4095,
+        4095,    0,    0, 4095, 4095, 4095, 4095,    0, 4095, 4095,    0,
+           0,    0,    0, 4095, 4095, 4095]], dtype=int32))
+2024-08-29 13:59:37,306 - ERROR - Failed to create wallet: 'utf-8' codec can't decode byte 0xff in position 192: invalid start byte
+2024-08-29 14:00:58,460 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:00:58,705 - INFO - Logging initialized.
+2024-08-29 14:00:58,705 - INFO - Starting main function...
+2024-08-29 14:00:58,705 - INFO - Starting the build process...
+2024-08-29 14:00:58,705 - INFO - Cleaning previous build directory: build
+2024-08-29 14:00:58,705 - INFO - Running command: rm -rf build in /Users/apikorus/creed_wallet
+2024-08-29 14:00:58,711 - INFO - Command output:
+
+2024-08-29 14:00:58,711 - INFO - Creating new build directory: build
+2024-08-29 14:00:58,711 - INFO - Running CMake...
+2024-08-29 14:00:58,731 - INFO - Running command: cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pybind11 -S . -B build in .
+2024-08-29 14:00:59,360 - INFO - Command output:
+-- The CXX compiler identification is AppleClang 15.0.0.15000309
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: /opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12 (found suitable version "3.12.5", minimum required is "3.7") found components: Interpreter Development.Module Development.Embed
+-- Performing Test HAS_FLTO_THIN
+-- Performing Test HAS_FLTO_THIN - Success
+-- Found pybind11: /opt/homebrew/opt/pybind11/include (found version "2.13.5")
+-- CMake Version: 3.29.3
+-- Project: CreedWallet
+-- C++ Standard: 17
+-- Python Version: 3.12.5
+-- Eigen3 Version: 3.4.0
+-- Pybind11 Version: 2.13.5
+-- Eigen3 Include Directory: /opt/homebrew/include/eigen3
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/apikorus/creed_wallet/build
+
+2024-08-29 14:00:59,360 - INFO - Running Make...
+2024-08-29 14:00:59,360 - INFO - Running command: make in build
+2024-08-29 14:01:01,534 - INFO - Command output:
+[ 50%] Building CXX object CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o
+[100%] Linking CXX shared module lattice_crypto.cpython-312-darwin.so
+[100%] Built target lattice_crypto
+
+2024-08-29 14:01:01,534 - INFO - Build completed successfully.
+2024-08-29 14:01:02,174 - INFO - Successfully connected to Infura's Ethereum mainnet.
+2024-08-29 14:01:02,188 - INFO - New Ethereum account created. Address: 0xFdb6CB5c460E1Edd4A78C44caaFccc45EdeCFf7F
+2024-08-29 14:01:02,188 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:01:02,189 - INFO - Message encrypted successfully.
+2024-08-29 14:01:02,189 - INFO - Private key encrypted successfully with Fernet.
+2024-08-29 14:01:02,299 - INFO - Private key additionally encrypted using lattice-based cryptography.
+2024-08-29 14:01:02,299 - INFO - Wallet address: 0xFdb6CB5c460E1Edd4A78C44caaFccc45EdeCFf7F
+2024-08-29 14:01:02,299 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:01:02,299 - ERROR - Failed to create wallet: 'bytes' object has no attribute 'encode'
+2024-08-29 14:03:21,683 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:03:22,027 - INFO - Logging initialized.
+2024-08-29 14:03:22,028 - INFO - Starting main function...
+2024-08-29 14:03:22,028 - INFO - Starting the build process...
+2024-08-29 14:03:22,028 - INFO - Cleaning previous build directory: build
+2024-08-29 14:03:22,028 - INFO - Running command: rm -rf build in /Users/apikorus/creed_wallet
+2024-08-29 14:03:22,034 - INFO - Command output:
+
+2024-08-29 14:03:22,034 - INFO - Creating new build directory: build
+2024-08-29 14:03:22,034 - INFO - Running CMake...
+2024-08-29 14:03:22,059 - INFO - Running command: cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pybind11 -S . -B build in .
+2024-08-29 14:03:22,727 - INFO - Command output:
+-- The CXX compiler identification is AppleClang 15.0.0.15000309
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: /opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12 (found suitable version "3.12.5", minimum required is "3.7") found components: Interpreter Development.Module Development.Embed
+-- Performing Test HAS_FLTO_THIN
+-- Performing Test HAS_FLTO_THIN - Success
+-- Found pybind11: /opt/homebrew/opt/pybind11/include (found version "2.13.5")
+-- CMake Version: 3.29.3
+-- Project: CreedWallet
+-- C++ Standard: 17
+-- Python Version: 3.12.5
+-- Eigen3 Version: 3.4.0
+-- Pybind11 Version: 2.13.5
+-- Eigen3 Include Directory: /opt/homebrew/include/eigen3
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/apikorus/creed_wallet/build
+
+2024-08-29 14:03:22,727 - INFO - Running Make...
+2024-08-29 14:03:22,727 - INFO - Running command: make in build
+2024-08-29 14:03:24,968 - INFO - Command output:
+[ 50%] Building CXX object CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o
+[100%] Linking CXX shared module lattice_crypto.cpython-312-darwin.so
+[100%] Built target lattice_crypto
+
+2024-08-29 14:03:24,968 - INFO - Build completed successfully.
+2024-08-29 14:03:25,642 - INFO - Successfully connected to Infura's Ethereum mainnet.
+2024-08-29 14:03:25,660 - INFO - New Ethereum account created. Address: 0x8DDC02c4904dd19d5B64931480812D77F3eA237C
+2024-08-29 14:03:25,660 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:03:25,661 - INFO - Message encrypted successfully.
+2024-08-29 14:03:25,661 - INFO - Private key encrypted successfully with Fernet.
+2024-08-29 14:03:25,780 - INFO - Private key additionally encrypted using lattice-based cryptography.
+2024-08-29 14:03:25,780 - INFO - Wallet address: 0x8DDC02c4904dd19d5B64931480812D77F3eA237C
+2024-08-29 14:03:25,780 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:03:25,780 - INFO - Message encrypted successfully.
+2024-08-29 14:03:25,780 - INFO - Encrypted private key (Base64): Z0FBQUFBQm0wRlY5VkpSa0xVeWxYM3FVVFItY3g0UmM1N3c5dlkxZDd5eTBlSGlsZk9ibnNELXNINTdrR3pjcGpJd1BOZk5GYnRHOExGUjJoTGlpLVlERTNJWGxpNDMwNlA3LXR2ZDV3Z3UyeE5oSTBEZk9mX2RBajdCelRDUzg5azlEUXU1SFhVMldTRlQ4WlJMMjgtT0hrdld6UkJCUTNlZzlJS1FPbXlyNUkxMUlsclp6OFhZPQ==
+2024-08-29 14:03:25,836 - INFO - Lattice Encrypted Key: (array([[4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0, 4095, 4095,
+        4095, 4095,    0,    0,    0,    0,    0,    0,    0, 4095, 4095,
+        4095, 4095,    0,    0,    0,    0, 4095, 4095, 4095,    0, 4095,
+        4095, 4095, 4095,    0,    0,    0,    0, 4095, 4095, 4095, 4095,
+        4095, 4095, 4095,    0,    0,    0,    0,    0, 4095, 4095, 4095,
+        4095, 4095,    0,    0,    0,    0,    0,    0, 4095, 4095, 4095,
+        4095, 4095,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095,
+        4095,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095, 4095,
+           0,    0,    0,    0,    0,    0, 4095, 4095, 4095, 4095,    0,
+           0,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095, 4095,
+           0,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095, 4095,
+           0,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095,    0,
+           0,    0,    0,    0,    0, 4095, 4095, 4095, 4095,    0,    0,
+           0,    0, 4095, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,
+           0,    0, 4095, 4095, 4095, 4095,    0,    0, 4095, 4095,    0,
+           0,    0,    0, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,
+           0,    0,    0, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,
+           0,    0, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,
+           0,    0, 4095, 4095, 4095,    0,    0,    0,    0,    0,    0,
+        4095, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0, 4095,
+        4095, 4095, 4095,    0, 4095, 4095, 4095,    0,    0,    0,    0,
+        4095, 4095, 4095, 4095,    0,    0,    0,    0,    0,    0,    0,
+        4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0,    0,    0,
+        4095, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0, 4095,
+        4095, 4095, 4095,    0,    0,    0,    0,    0,    0,    0, 4095,
+        4095, 4095, 4095,    0,    0,    0,    0, 4095, 4095, 4095, 4095,
+           0, 4095, 4095, 4095,    0,    0,    0,    0, 4095, 4095, 4095,
+        4095, 4095,    0,    0,    0,    0,    0,    0, 4095, 4095, 4095,
+        4095, 4095,    0,    0,    0,    0,    0,    0, 4095, 4095, 4095,
+        4095, 4095, 4095,    0,    0,    0,    0, 4095, 4095, 4095, 4095,
+           0, 4095,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095,
+           0,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095, 4095,
+           0,    0,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095,
+           0,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095, 4095,
+           0,    0,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095,
+           0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095, 4095,    0,
+           0,    0,    0, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,
+           0,    0,    0, 4095, 4095, 4095, 4095,    0,    0,    0,    0,
+        4095,    0,    0, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,
+           0,    0, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,
+           0,    0,    0, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,
+           0,    0,    0, 4095, 4095, 4095, 4095,    0,    0,    0,    0,
+        4095, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0,
+        4095, 4095, 4095, 4095,    0,    0,    0, 4095,    0,    0,    0,
+           0, 4095, 4095, 4095, 4095,    0,    0,    0,    0,    0, 4095,
+        4095, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0,    0,
+        4095, 4095, 4095, 4095, 4095, 4095]], dtype=int32), array([[4198, 4160, 4160, 4160,   65,   65,   66,  109,   48,   70,   86,
+        4152, 4181,   74, 4177, 4202, 4171, 4180, 4216, 4203, 4183,   51,
+         113,   85,   84,   82,   45, 4194, 4215, 4147, 4177, 4194, 4148,
+        4150,  119,   57,  118,   89,   49, 4195, 4150, 4216, 4216, 4143,
+         101, 4167,  105,  108,  102,   79,   98, 4205, 4210, 4163, 4140,
+        4210,   72,   53,   55,  107,   71, 4217, 4194, 4207, 4201, 4168,
+        4214,   80,   78,  102,   78,   70,   98,  116,   71, 4151, 4171,
+        4165, 4177, 4145, 4199, 4171, 4200,  105, 4140,   89,   68,   69,
+          51,   73, 4183, 4203, 4200, 4147, 4146, 4143, 4149,   80,   55,
+          45,  116,  118,  100, 4148, 4214, 4198, 4212, 4145, 4215,   78,
+         104,   73,   48, 4163, 4197, 4174, 4197, 4190, 4195,   65,  106,
+          55,   66,  122, 4179, 4162, 4178, 4151, 4152, 4202,   57,   68,
+          81,  117,   53,   72,   88, 4180, 4145, 4182, 4178,   70, 4179,
+        4151, 4185, 4177,   76, 4145,   56,   45,   79,   72,  107,  118,
+        4182, 4217, 4177, 4161, 4161,   81,   51,  101,  103,   57,   73,
+          75, 4176, 4174, 4204, 4216, 4209,   53,   73,   49,   49,   73,
+        4203,  114, 4185, 4217, 4151, 4183, 4184,   61,    0,    0,    0,
+           0, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0,    0,
+           0,    0, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095,
+        4095,    0,    0,    0,    0,    0,    0,    0, 4095, 4095, 4095,
+        4095, 4095,    0,    0,    0,    0,    0,    0,    0,    0, 4095,
+        4095, 4095, 4095,    0,    0,    0,    0,    0,    0,    0, 4095,
+        4095, 4095, 4095, 4095,    0,    0,    0,    0,    0, 4095, 4095,
+        4095, 4095, 4095,    0,    0,    0,    0,    0,    0,    0, 4095,
+        4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,
+           0,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095,    0,
+           0,    0,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095,
+           0,    0,    0,    0,    0,    0,    0,    0, 4095, 4095, 4095,
+        4095,    0,    0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095,
+        4095, 4095,    0,    0,    0, 4095,    0, 4095, 4095, 4095, 4095,
+        4095, 4095, 4095, 4095,    0, 4095, 4095, 4095,    0,    0,    0,
+           0, 4095,    0, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,
+           0,    0,    0, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,
+           0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095, 4095,    0,
+           0,    0,    0,    0, 4095, 4095, 4095, 4095, 4095, 4095,    0,
+           0,    0,    0,    0, 4095, 4095,    0, 4095, 4095, 4095,    0,
+           0, 4095, 4095, 4095,    0,    0,    0,    0,    0,    0, 4095,
+        4095, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0, 4095,
+           0,    0, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0,
+        4095, 4095, 4095, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,
+           0,    0, 4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0,
+           0,    0, 4095, 4095, 4095, 4095, 4095,    0, 4095,    0,    0,
+           0,    0,    0,    0,    0,    0,    0, 4095, 4095, 4095, 4095,
+        4095, 4095, 4095,    0,    0,    0,    0,    0,    0,    0, 4095,
+        4095, 4095, 4095, 4095,    0,    0,    0,    0, 4095, 4095, 4095,
+        4095, 4095, 4095, 4095, 4095,    0,    0,    0,    0,    0, 4095,
+        4095, 4095, 4095,    0,    0,    0]], dtype=int32))
+2024-08-29 14:03:25,889 - ERROR - Failed to create wallet: 'utf-8' codec can't decode byte 0xff in position 191: invalid start byte
+2024-08-29 14:05:34,254 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:05:34,582 - INFO - Logging initialized.
+2024-08-29 14:05:34,582 - INFO - Starting main function...
+2024-08-29 14:05:34,582 - ERROR - Build process failed and main process aborted: name 'build_project' is not defined
+2024-08-29 14:10:11,816 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:10:12,176 - INFO - Logging initialized.
+2024-08-29 14:10:12,176 - INFO - Starting main function...
+2024-08-29 14:10:12,176 - INFO - Starting the build process...
+2024-08-29 14:10:12,176 - INFO - Cleaning previous build directory: build
+2024-08-29 14:10:12,176 - INFO - Running command: rm -rf build in /Users/apikorus/creed_wallet
+2024-08-29 14:10:12,183 - INFO - Command output:
+
+2024-08-29 14:10:12,183 - INFO - Creating new build directory: build
+2024-08-29 14:10:12,183 - INFO - Running CMake...
+2024-08-29 14:10:12,208 - INFO - Running command: cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pybind11 -S . -B build in .
+2024-08-29 14:10:12,910 - INFO - Command output:
+-- The CXX compiler identification is AppleClang 15.0.0.15000309
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: /opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12 (found suitable version "3.12.5", minimum required is "3.7") found components: Interpreter Development.Module Development.Embed
+-- Performing Test HAS_FLTO_THIN
+-- Performing Test HAS_FLTO_THIN - Success
+-- Found pybind11: /opt/homebrew/opt/pybind11/include (found version "2.13.5")
+-- CMake Version: 3.29.3
+-- Project: CreedWallet
+-- C++ Standard: 17
+-- Python Version: 3.12.5
+-- Eigen3 Version: 3.4.0
+-- Pybind11 Version: 2.13.5
+-- Eigen3 Include Directory: /opt/homebrew/include/eigen3
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/apikorus/creed_wallet/build
+
+2024-08-29 14:10:12,911 - INFO - Running Make...
+2024-08-29 14:10:12,911 - INFO - Running command: make in build
+2024-08-29 14:10:15,280 - INFO - Command output:
+[ 50%] Building CXX object CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o
+[100%] Linking CXX shared module lattice_crypto.cpython-312-darwin.so
+[100%] Built target lattice_crypto
+
+2024-08-29 14:10:15,280 - INFO - Build completed successfully.
+2024-08-29 14:10:15,936 - INFO - Successfully connected to Infura's Ethereum mainnet.
+2024-08-29 14:10:15,947 - INFO - New Ethereum account created. Address: 0xc44a924Aa20ff2956579e7BCB1e607F80A6E37c8
+2024-08-29 14:10:15,947 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:10:15,948 - INFO - Message encrypted successfully.
+2024-08-29 14:10:15,948 - INFO - Private key encrypted successfully with Fernet.
+2024-08-29 14:10:16,048 - INFO - Private key additionally encrypted using lattice-based cryptography.
+2024-08-29 14:10:16,048 - INFO - Wallet address: 0xc44a924Aa20ff2956579e7BCB1e607F80A6E37c8
+2024-08-29 14:10:16,048 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:10:16,048 - ERROR - Failed to create wallet: 'bytes' object has no attribute 'encode'
+2024-08-29 14:12:19,088 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:12:19,331 - INFO - Logging initialized.
+2024-08-29 14:12:19,332 - INFO - Starting main function...
+2024-08-29 14:12:19,332 - INFO - Starting the build process...
+2024-08-29 14:12:19,332 - INFO - Cleaning previous build directory: build
+2024-08-29 14:12:19,332 - INFO - Running command: rm -rf build in /Users/apikorus/creed_wallet
+2024-08-29 14:12:19,337 - INFO - Command output:
+
+2024-08-29 14:12:19,337 - INFO - Creating new build directory: build
+2024-08-29 14:12:19,337 - INFO - Running CMake...
+2024-08-29 14:12:19,357 - INFO - Running command: cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pybind11 -S . -B build in .
+2024-08-29 14:12:20,001 - INFO - Command output:
+-- The CXX compiler identification is AppleClang 15.0.0.15000309
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: /opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12 (found suitable version "3.12.5", minimum required is "3.7") found components: Interpreter Development.Module Development.Embed
+-- Performing Test HAS_FLTO_THIN
+-- Performing Test HAS_FLTO_THIN - Success
+-- Found pybind11: /opt/homebrew/opt/pybind11/include (found version "2.13.5")
+-- CMake Version: 3.29.3
+-- Project: CreedWallet
+-- C++ Standard: 17
+-- Python Version: 3.12.5
+-- Eigen3 Version: 3.4.0
+-- Pybind11 Version: 2.13.5
+-- Eigen3 Include Directory: /opt/homebrew/include/eigen3
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/apikorus/creed_wallet/build
+
+2024-08-29 14:12:20,002 - INFO - Running Make...
+2024-08-29 14:12:20,002 - INFO - Running command: make in build
+2024-08-29 14:12:22,301 - INFO - Command output:
+[ 50%] Building CXX object CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o
+[100%] Linking CXX shared module lattice_crypto.cpython-312-darwin.so
+[100%] Built target lattice_crypto
+
+2024-08-29 14:12:22,302 - INFO - Build completed successfully.
+2024-08-29 14:12:22,949 - INFO - Successfully connected to Infura's Ethereum mainnet.
+2024-08-29 14:12:22,959 - INFO - New Ethereum account created. Address: 0x0801FaB2c2E7dae93e9BA77F90300305D2486AF0
+2024-08-29 14:12:22,960 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:12:22,960 - INFO - Message encrypted successfully.
+2024-08-29 14:12:22,960 - INFO - Private key encrypted successfully with Fernet.
+2024-08-29 14:12:23,053 - INFO - Private key additionally encrypted using lattice-based cryptography.
+2024-08-29 14:12:23,053 - INFO - Wallet address: 0x0801FaB2c2E7dae93e9BA77F90300305D2486AF0
+2024-08-29 14:12:23,053 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:12:23,053 - ERROR - Failed to create wallet: 'bytes' object has no attribute 'encode'

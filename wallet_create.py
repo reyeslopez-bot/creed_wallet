@@ -5,11 +5,17 @@ from variables import INFURA_ENDPOINT
 from encryption import Encrypt
 from lattice_crypto import RingLWECrypto  # Import the RingLWECrypto class
 
+# Configure logging
+logging.basicConfig(
+    filename='wallet_create.log',
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+
 def create_wallet():
     """Create a new Ethereum wallet and encrypt its private key."""
     try:
         # Initialize Web3 connection to Infura
-        logging.info(f"Attempting to connect to Infura with endpoint: {INFURA_ENDPOINT}")
         w3 = Web3(Web3.HTTPProvider(INFURA_ENDPOINT))
         if not w3.is_connected():
             logging.error("Failed to connect to Infura's Ethereum mainnet.")
@@ -22,12 +28,18 @@ def create_wallet():
         logging.info(f"New Ethereum account created. Address: {acct.address}")
         print(f"New Ethereum account created. Address: {acct.address}")
 
+        # Print available attributes for debugging
+        print(dir(acct))
+
         # Load or generate encryption key
         encryption_key = Encrypt.load_key()
-        logging.info("Encryption key loaded successfully.")
 
-        # Encrypt the private key using Fernet
-        encrypted_private_key = Encrypt.encrypt_message(encryption_key, acct.privateKey.hex())
+        # Attempt to access the private key (try both possible attribute names)
+        try:
+            encrypted_private_key = Encrypt.encrypt_message(encryption_key, acct.private_key.hex())
+        except AttributeError:
+            encrypted_private_key = Encrypt.encrypt_message(encryption_key, acct.key.hex())
+
         logging.info("Private key encrypted successfully with Fernet.")
 
         # Additional encryption using lattice-based cryptography
@@ -42,5 +54,5 @@ def create_wallet():
         raise
 
     except Exception as e:
-        logging.error(f"An unexpected error occurred during wallet creation: {e}")
+        logging.error(f"An error occurred during wallet creation: {e}")
         raise

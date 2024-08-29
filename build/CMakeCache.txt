@@ -20,8 +20,9 @@ CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
 //Path to a program.
 CMAKE_AR:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar
 
-//No help, variable specified on the command line.
-CMAKE_BUILD_TYPE:STRING=Debug
+//Choose the type of build, options are: None Debug Release RelWithDebInfo
+// MinSizeRel ...
+CMAKE_BUILD_TYPE:STRING=
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -62,14 +63,14 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 //Flags used by the linker during RELWITHDEBINFO builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
-//No help, variable specified on the command line.
-CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
+//Enable/Disable output of compile commands during generation.
+CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 
 //Value Computed by CMake.
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/Users/apikorus/creed_wallet/build/CMakeFiles/pkgRedirects
 
 //Path to a program.
-CMAKE_INSTALL_NAME_TOOL:FILEPATH=/opt/anaconda3/bin/install_name_tool
+CMAKE_INSTALL_NAME_TOOL:FILEPATH=/usr/bin/install_name_tool
 
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=/usr/local
@@ -119,6 +120,9 @@ CMAKE_OSX_DEPLOYMENT_TARGET:STRING=
 //The product will be built against the headers and libraries located
 // inside the indicated SDK.
 CMAKE_OSX_SYSROOT:PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk
+
+//No help, variable specified on the command line.
+CMAKE_PREFIX_PATH:UNINITIALIZED=/opt/homebrew/opt/pybind11
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -210,7 +214,7 @@ Eigen3_DIR:PATH=/opt/homebrew/share/eigen3/cmake
 lattice_crypto_LIB_DEPENDS:STATIC=general;/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/lib/libpython3.12.dylib;
 
 //The directory containing a CMake configuration file for pybind11.
-pybind11_DIR:PATH=/opt/homebrew/share/cmake/pybind11
+pybind11_DIR:PATH=/opt/homebrew/opt/pybind11/share/cmake/pybind11
 
 
 ########################
@@ -265,6 +269,8 @@ CMAKE_EXE_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_EXE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_EXPORT_COMPILE_COMMANDS
+CMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1
 //Name of external makefile project generator.
 CMAKE_EXTRA_GENERATOR:INTERNAL=
 //Name of generator.
@@ -372,5 +378,5 @@ _Python3_LIBRARY_RELEASE:INTERNAL=/opt/homebrew/opt/python@3.12/Frameworks/Pytho
 //NumPy reason failure
 _Python3_NumPy_REASON_FAILURE:INTERNAL=
 //Directories where pybind11 and possibly Python headers are located
-pybind11_INCLUDE_DIRS:INTERNAL=/opt/homebrew/include;/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12
+pybind11_INCLUDE_DIRS:INTERNAL=/opt/homebrew/opt/pybind11/include;/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12
 
