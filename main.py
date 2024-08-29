@@ -94,11 +94,13 @@ def create_wallet_with_rate_limit():
 def encrypt_private_key(acct):
     """Encrypt the private key using Fernet and lattice-based encryption."""
     encryption_key = Encrypt.load_key()
-    private_key_hex = acct._private_key.hex()
-
+    
+    # Convert the HexBytes private key to a byte sequence
+    private_key_bytes = bytes(acct._private_key)
+    
     # Encrypt the private key using Fernet
-    encrypted_private_key = Encrypt.encrypt_message(encryption_key, private_key_hex.encode('utf-8'))
-
+    encrypted_private_key = Encrypt.encrypt_message(encryption_key, private_key_bytes)
+    
     # Encode to Base64 for safe storage and transmission
     encrypted_private_key_b64 = base64.b64encode(encrypted_private_key).decode('utf-8')
     variables.encrypted_private_key = encrypted_private_key_b64
@@ -106,20 +108,26 @@ def encrypt_private_key(acct):
 
     # Utilize lattice-based encryption for further security
     lattice_crypt = RingLWECrypto(512, 4096)
-    encrypted_lattice = lattice_crypt.encrypt(encrypted_private_key_b64.encode('utf-8'))  # Encode before lattice encryption
+    
+    # Encrypt the already base64 encoded private key (do not encode to utf-8 again)
+    encrypted_lattice = lattice_crypt.encrypt(encrypted_private_key)
     encrypted_lattice_b64 = base64.b64encode(encrypted_lattice).decode('utf-8')
     logging.info(f"Lattice Encrypted Key (Base64): {encrypted_lattice_b64}")
 
     return encrypted_private_key_b64, encrypted_lattice_b64
+
 def verify_lattice_encryption(encrypted_private_key_b64, encrypted_lattice_b64):
     """Verify that the lattice-based encryption can be decrypted correctly."""
     lattice_crypt = RingLWECrypto(512, 4096)
 
     # Decode Base64 lattice-encrypted key
     encrypted_lattice = base64.b64decode(encrypted_lattice_b64)
-    decrypted_lattice = lattice_crypt.decrypt(encrypted_lattice).decode('utf-8')
+    decrypted_lattice = lattice_crypt.decrypt(encrypted_lattice)
 
-    if decrypted_lattice != encrypted_private_key_b64:
+    # Convert decrypted bytes back to Base64 encoded string for comparison
+    decrypted_lattice_b64 = base64.b64encode(decrypted_lattice).decode('utf-8')
+
+    if decrypted_lattice_b64 != encrypted_private_key_b64:
         logging.error("Lattice-based decryption failed.")
         return False
     else:

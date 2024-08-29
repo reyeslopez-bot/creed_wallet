@@ -1248,3 +1248,303 @@ make: *** No targets specified and no makefile found.  Stop.
 2024-08-29 14:29:47,965 - INFO - Wallet address: 0x4fAcaf308c060772C1825e60907A8f56fcDCBe94
 2024-08-29 14:29:47,965 - INFO - Encryption key loaded from secret.key
 2024-08-29 14:29:47,965 - ERROR - Failed to create wallet: 'bytes' object has no attribute 'encode'
+2024-08-29 14:32:31,569 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:32:31,926 - INFO - Logging initialized.
+2024-08-29 14:32:31,926 - INFO - Starting main function...
+2024-08-29 14:32:31,926 - INFO - Starting the build process...
+2024-08-29 14:32:31,926 - INFO - Cleaning previous build directory: build
+2024-08-29 14:32:31,926 - INFO - Running command: rm -rf build in /Users/apikorus/creed_wallet
+2024-08-29 14:32:31,932 - INFO - Command output:
+
+2024-08-29 14:32:31,932 - INFO - Creating new build directory: build
+2024-08-29 14:32:31,932 - INFO - Running CMake...
+2024-08-29 14:32:31,955 - INFO - Running command: cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pybind11 -S . -B build in .
+2024-08-29 14:32:32,629 - INFO - Command output:
+-- The CXX compiler identification is AppleClang 15.0.0.15000309
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: /opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12 (found suitable version "3.12.5", minimum required is "3.12") found components: Interpreter Development.Module Development.Embed
+-- Performing Test HAS_FLTO_THIN
+-- Performing Test HAS_FLTO_THIN - Success
+-- Found pybind11: /opt/homebrew/opt/pybind11/include (found version "2.13.5")
+-- CMake Version: 3.29.3
+-- Project: CreedWallet
+-- C++ Standard: 17
+-- Python Version: 3.12.5
+-- Eigen3 Version: 3.4.0
+-- Pybind11 Version: 2.13.5
+-- Eigen3 Include Directory: /opt/homebrew/include/eigen3
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/apikorus/creed_wallet/build
+
+2024-08-29 14:32:32,629 - INFO - Running Make...
+2024-08-29 14:32:32,629 - INFO - Running command: make in build
+2024-08-29 14:32:34,872 - INFO - Command output:
+[ 50%] Building CXX object CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o
+[100%] Linking CXX shared module lattice_crypto.cpython-312-darwin.so
+[100%] Built target lattice_crypto
+
+2024-08-29 14:32:34,872 - INFO - Build completed successfully.
+2024-08-29 14:32:35,520 - INFO - Successfully connected to Infura's Ethereum mainnet.
+2024-08-29 14:32:35,532 - INFO - New Ethereum account created. Address: 0xBeb6E32EF223922EFb5ed041FE626dc7A3d3D07C
+2024-08-29 14:32:35,533 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:32:35,534 - INFO - Message encrypted successfully.
+2024-08-29 14:32:35,534 - INFO - Private key encrypted successfully with Fernet.
+2024-08-29 14:32:35,659 - INFO - Private key additionally encrypted using lattice-based cryptography.
+2024-08-29 14:32:35,659 - INFO - Wallet address: 0xBeb6E32EF223922EFb5ed041FE626dc7A3d3D07C
+2024-08-29 14:32:35,659 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:32:35,660 - ERROR - Failed to create wallet: 'HexBytes' object has no attribute 'encode'
+2024-08-29 14:35:39,107 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:35:39,474 - INFO - Logging initialized.
+2024-08-29 14:35:39,474 - INFO - Starting main function...
+2024-08-29 14:35:39,474 - INFO - Starting the build process...
+2024-08-29 14:35:39,474 - INFO - Cleaning previous build directory: build
+2024-08-29 14:35:39,474 - INFO - Running command: rm -rf build in /Users/apikorus/creed_wallet
+2024-08-29 14:35:39,480 - INFO - Command output:
+
+2024-08-29 14:35:39,481 - INFO - Creating new build directory: build
+2024-08-29 14:35:39,481 - INFO - Running CMake...
+2024-08-29 14:35:39,503 - INFO - Running command: cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pybind11 -S . -B build in .
+2024-08-29 14:35:40,199 - INFO - Command output:
+-- The CXX compiler identification is AppleClang 15.0.0.15000309
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: /opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12 (found suitable version "3.12.5", minimum required is "3.12") found components: Interpreter Development.Module Development.Embed
+-- Performing Test HAS_FLTO_THIN
+-- Performing Test HAS_FLTO_THIN - Success
+-- Found pybind11: /opt/homebrew/opt/pybind11/include (found version "2.13.5")
+-- CMake Version: 3.29.3
+-- Project: CreedWallet
+-- C++ Standard: 17
+-- Python Version: 3.12.5
+-- Eigen3 Version: 3.4.0
+-- Pybind11 Version: 2.13.5
+-- Eigen3 Include Directory: /opt/homebrew/include/eigen3
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/apikorus/creed_wallet/build
+
+2024-08-29 14:35:40,199 - INFO - Running Make...
+2024-08-29 14:35:40,199 - INFO - Running command: make in build
+2024-08-29 14:35:42,476 - INFO - Command output:
+[ 50%] Building CXX object CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o
+[100%] Linking CXX shared module lattice_crypto.cpython-312-darwin.so
+[100%] Built target lattice_crypto
+
+2024-08-29 14:35:42,476 - INFO - Build completed successfully.
+2024-08-29 14:35:43,143 - INFO - Successfully connected to Infura's Ethereum mainnet.
+2024-08-29 14:35:43,160 - INFO - New Ethereum account created. Address: 0x1227108C27Ff5309988eE31965bC290dCE8F89d0
+2024-08-29 14:35:43,161 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:35:43,163 - INFO - Message encrypted successfully.
+2024-08-29 14:35:43,163 - INFO - Private key encrypted successfully with Fernet.
+2024-08-29 14:35:43,280 - INFO - Private key additionally encrypted using lattice-based cryptography.
+2024-08-29 14:35:43,280 - INFO - Wallet address: 0x1227108C27Ff5309988eE31965bC290dCE8F89d0
+2024-08-29 14:35:43,280 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:35:43,280 - ERROR - Failed to create wallet: 'bytes' object has no attribute 'encode'
+2024-08-29 14:35:58,706 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:35:58,950 - INFO - Logging initialized.
+2024-08-29 14:35:58,950 - INFO - Starting main function...
+2024-08-29 14:35:58,950 - INFO - Starting the build process...
+2024-08-29 14:35:58,950 - INFO - Cleaning previous build directory: build
+2024-08-29 14:35:58,951 - INFO - Running command: rm -rf build in /Users/apikorus/creed_wallet
+2024-08-29 14:35:58,956 - INFO - Command output:
+
+2024-08-29 14:35:58,956 - INFO - Creating new build directory: build
+2024-08-29 14:35:58,956 - INFO - Running CMake...
+2024-08-29 14:35:58,975 - INFO - Running command: cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pybind11 -S . -B build in .
+2024-08-29 14:35:59,632 - INFO - Command output:
+-- The CXX compiler identification is AppleClang 15.0.0.15000309
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: /opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12 (found suitable version "3.12.5", minimum required is "3.12") found components: Interpreter Development.Module Development.Embed
+-- Performing Test HAS_FLTO_THIN
+-- Performing Test HAS_FLTO_THIN - Success
+-- Found pybind11: /opt/homebrew/opt/pybind11/include (found version "2.13.5")
+-- CMake Version: 3.29.3
+-- Project: CreedWallet
+-- C++ Standard: 17
+-- Python Version: 3.12.5
+-- Eigen3 Version: 3.4.0
+-- Pybind11 Version: 2.13.5
+-- Eigen3 Include Directory: /opt/homebrew/include/eigen3
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/apikorus/creed_wallet/build
+
+2024-08-29 14:35:59,633 - INFO - Running Make...
+2024-08-29 14:35:59,633 - INFO - Running command: make in build
+2024-08-29 14:36:01,867 - INFO - Command output:
+[ 50%] Building CXX object CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o
+[100%] Linking CXX shared module lattice_crypto.cpython-312-darwin.so
+[100%] Built target lattice_crypto
+
+2024-08-29 14:36:01,867 - INFO - Build completed successfully.
+2024-08-29 14:36:02,501 - INFO - Successfully connected to Infura's Ethereum mainnet.
+2024-08-29 14:36:02,517 - INFO - New Ethereum account created. Address: 0xd19bc14B159d306A611A5Eb04803412900A68ddB
+2024-08-29 14:36:02,518 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:36:02,518 - INFO - Message encrypted successfully.
+2024-08-29 14:36:02,518 - INFO - Private key encrypted successfully with Fernet.
+2024-08-29 14:36:02,619 - INFO - Private key additionally encrypted using lattice-based cryptography.
+2024-08-29 14:36:02,619 - INFO - Wallet address: 0xd19bc14B159d306A611A5Eb04803412900A68ddB
+2024-08-29 14:36:02,619 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:36:02,619 - ERROR - Failed to create wallet: 'bytes' object has no attribute 'encode'
+2024-08-29 14:37:50,998 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:37:51,240 - INFO - Logging initialized.
+2024-08-29 14:37:51,240 - INFO - Starting main function...
+2024-08-29 14:37:51,240 - INFO - Starting the build process...
+2024-08-29 14:37:51,240 - INFO - Cleaning previous build directory: build
+2024-08-29 14:37:51,240 - INFO - Running command: rm -rf build in /Users/apikorus/creed_wallet
+2024-08-29 14:37:51,246 - INFO - Command output:
+
+2024-08-29 14:37:51,246 - INFO - Creating new build directory: build
+2024-08-29 14:37:51,246 - INFO - Running CMake...
+2024-08-29 14:37:51,266 - INFO - Running command: cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pybind11 -S . -B build in .
+2024-08-29 14:37:51,885 - INFO - Command output:
+-- The CXX compiler identification is AppleClang 15.0.0.15000309
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: /opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12 (found suitable version "3.12.5", minimum required is "3.12") found components: Interpreter Development.Module Development.Embed
+-- Performing Test HAS_FLTO_THIN
+-- Performing Test HAS_FLTO_THIN - Success
+-- Found pybind11: /opt/homebrew/opt/pybind11/include (found version "2.13.5")
+-- CMake Version: 3.29.3
+-- Project: CreedWallet
+-- C++ Standard: 17
+-- Python Version: 3.12.5
+-- Eigen3 Version: 3.4.0
+-- Pybind11 Version: 2.13.5
+-- Eigen3 Include Directory: /opt/homebrew/include/eigen3
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/apikorus/creed_wallet/build
+
+2024-08-29 14:37:51,885 - INFO - Running Make...
+2024-08-29 14:37:51,885 - INFO - Running command: make in build
+2024-08-29 14:37:54,076 - INFO - Command output:
+[ 50%] Building CXX object CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o
+[100%] Linking CXX shared module lattice_crypto.cpython-312-darwin.so
+[100%] Built target lattice_crypto
+
+2024-08-29 14:37:54,076 - INFO - Build completed successfully.
+2024-08-29 14:37:54,761 - INFO - Successfully connected to Infura's Ethereum mainnet.
+2024-08-29 14:37:54,779 - INFO - New Ethereum account created. Address: 0x3e377E7C6E5c0b8d1e48978DD60ad0e3919d80cf
+2024-08-29 14:37:54,779 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:37:54,780 - INFO - Message encrypted successfully.
+2024-08-29 14:37:54,780 - INFO - Private key encrypted successfully with Fernet.
+2024-08-29 14:37:54,899 - INFO - Private key additionally encrypted using lattice-based cryptography.
+2024-08-29 14:37:54,899 - INFO - Wallet address: 0x3e377E7C6E5c0b8d1e48978DD60ad0e3919d80cf
+2024-08-29 14:37:54,899 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:37:54,899 - ERROR - Failed to create wallet: 'bytes' object has no attribute 'encode'
+2024-08-29 14:42:51,909 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:42:52,277 - INFO - Logging initialized.
+2024-08-29 14:42:52,277 - INFO - Starting main function...
+2024-08-29 14:42:52,277 - INFO - Starting the build process...
+2024-08-29 14:42:52,277 - INFO - Cleaning previous build directory: build
+2024-08-29 14:42:52,277 - INFO - Running command: rm -rf build in /Users/apikorus/creed_wallet
+2024-08-29 14:42:52,283 - INFO - Command output:
+
+2024-08-29 14:42:52,283 - INFO - Creating new build directory: build
+2024-08-29 14:42:52,283 - INFO - Running CMake...
+2024-08-29 14:42:52,307 - INFO - Running command: cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pybind11 -S . -B build in .
+2024-08-29 14:42:53,176 - INFO - Command output:
+-- The CXX compiler identification is AppleClang 15.0.0.15000309
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: /opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12 (found suitable version "3.12.5", minimum required is "3.12") found components: Interpreter Development.Module Development.Embed
+-- Performing Test HAS_FLTO_THIN
+-- Performing Test HAS_FLTO_THIN - Success
+-- Found pybind11: /opt/homebrew/opt/pybind11/include (found version "2.13.5")
+-- CMake Version: 3.29.3
+-- Project: CreedWallet
+-- C++ Standard: 17
+-- Python Version: 3.12.5
+-- Eigen3 Version: 3.4.0
+-- Pybind11 Version: 2.13.5
+-- Eigen3 Include Directory: /opt/homebrew/include/eigen3
+-- Configuring done (0.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/apikorus/creed_wallet/build
+
+2024-08-29 14:42:53,176 - INFO - Running Make...
+2024-08-29 14:42:53,176 - INFO - Running command: make in build
+2024-08-29 14:42:55,448 - INFO - Command output:
+[ 50%] Building CXX object CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o
+[100%] Linking CXX shared module lattice_crypto.cpython-312-darwin.so
+[100%] Built target lattice_crypto
+
+2024-08-29 14:42:55,448 - INFO - Build completed successfully.
+2024-08-29 14:42:56,146 - INFO - Successfully connected to Infura's Ethereum mainnet.
+2024-08-29 14:42:56,164 - INFO - New Ethereum account created. Address: 0x4184Bdf10d45ecB02BA1040F73996E8FD09d83Fe
+2024-08-29 14:42:56,164 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:42:56,165 - INFO - Message encrypted successfully.
+2024-08-29 14:42:56,165 - INFO - Private key encrypted successfully with Fernet.
+2024-08-29 14:42:56,284 - INFO - Private key additionally encrypted using lattice-based cryptography.
+2024-08-29 14:42:56,284 - INFO - Wallet address: 0x4184Bdf10d45ecB02BA1040F73996E8FD09d83Fe
+2024-08-29 14:42:56,284 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:42:56,284 - ERROR - Failed to create wallet: 'bytes' object has no attribute 'encode'
+2024-08-29 14:43:44,284 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:43:44,634 - INFO - Logging initialized.
+2024-08-29 14:43:44,634 - INFO - Starting main function...
+2024-08-29 14:43:44,634 - INFO - Starting the build process...
+2024-08-29 14:43:44,634 - INFO - Cleaning previous build directory: build
+2024-08-29 14:43:44,634 - INFO - Running command: rm -rf build in /Users/apikorus/creed_wallet
+2024-08-29 14:43:44,641 - INFO - Command output:
+
+2024-08-29 14:43:44,641 - INFO - Creating new build directory: build
+2024-08-29 14:43:44,641 - INFO - Running CMake...
+2024-08-29 14:43:44,665 - INFO - Running command: cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pybind11 -S . -B build in .
+2024-08-29 14:43:45,388 - INFO - Command output:
+-- The CXX compiler identification is AppleClang 15.0.0.15000309
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: /opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12 (found suitable version "3.12.5", minimum required is "3.12") found components: Interpreter Development.Module Development.Embed
+-- Performing Test HAS_FLTO_THIN
+-- Performing Test HAS_FLTO_THIN - Success
+-- Found pybind11: /opt/homebrew/opt/pybind11/include (found version "2.13.5")
+-- CMake Version: 3.29.3
+-- Project: CreedWallet
+-- C++ Standard: 17
+-- Python Version: 3.12.5
+-- Eigen3 Version: 3.4.0
+-- Pybind11 Version: 2.13.5
+-- Eigen3 Include Directory: /opt/homebrew/include/eigen3
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/apikorus/creed_wallet/build
+
+2024-08-29 14:43:45,388 - INFO - Running Make...
+2024-08-29 14:43:45,388 - INFO - Running command: make in build
+2024-08-29 14:43:47,848 - INFO - Command output:
+[ 50%] Building CXX object CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o
+[100%] Linking CXX shared module lattice_crypto.cpython-312-darwin.so
+[100%] Built target lattice_crypto
+
+2024-08-29 14:43:47,848 - INFO - Build completed successfully.
+2024-08-29 14:43:48,485 - INFO - Successfully connected to Infura's Ethereum mainnet.
+2024-08-29 14:43:48,496 - INFO - New Ethereum account created. Address: 0xF4c0d24e879C5FE4619e44e311330d562099eC37
+2024-08-29 14:43:48,496 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:43:48,497 - INFO - Message encrypted successfully.
+2024-08-29 14:43:48,497 - INFO - Private key encrypted successfully with Fernet.
+2024-08-29 14:43:48,600 - INFO - Private key additionally encrypted using lattice-based cryptography.
+2024-08-29 14:43:48,600 - INFO - Wallet address: 0xF4c0d24e879C5FE4619e44e311330d562099eC37
+2024-08-29 14:43:48,600 - INFO - Encryption key loaded from secret.key
+2024-08-29 14:43:48,600 - ERROR - Failed to create wallet: 'bytes' object has no attribute 'encode'
