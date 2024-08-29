@@ -1,0 +1,371 @@
+2024-08-27 12:10:38,776 - WARNING - secret.key not found. Generating a new key.
+2024-08-27 12:10:38,777 - INFO - New encryption key generated and saved to secret.key
+2024-08-27 12:10:38,779 - ERROR - Error connecting to Infura: 'Web3' object has no attribute 'isConnected'
+2024-08-27 12:10:38,779 - ERROR - An error occurred in main: 'Web3' object has no attribute 'isConnected'
+2024-08-27 12:11:51,382 - INFO - Encryption key loaded from secret.key
+2024-08-27 12:21:38,046 - INFO - Encryption key loaded from secret.key
+2024-08-27 12:37:55,495 - INFO - Encryption key loaded from secret.key
+2024-08-27 13:17:18,019 - INFO - Encryption key loaded from secret.key
+2024-08-28 11:07:40,369 - INFO - Encryption key loaded from secret.key
+2024-08-28 11:07:46,716 - INFO - Encryption key loaded from secret.key
+2024-08-29 09:58:45,174 - INFO - Encryption key loaded from secret.key
+2024-08-29 10:22:01,380 - INFO - Encryption key loaded from secret.key
+2024-08-29 10:22:19,974 - INFO - Encryption key loaded from secret.key
+2024-08-29 10:22:20,222 - INFO - Encryption key loaded from secret.key
+2024-08-29 10:22:20,227 - ERROR - Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 10:22:20,227 - ERROR - Error connecting to Infura: Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 10:23:20,617 - INFO - Encryption key loaded from secret.key
+2024-08-29 10:32:05,441 - INFO - Encryption key loaded from secret.key
+2024-08-29 10:44:39,640 - INFO - Encryption key loaded from secret.key
+2024-08-29 10:44:40,012 - INFO - Logging initialized.
+2024-08-29 10:44:40,012 - INFO - Starting main function...
+2024-08-29 10:44:40,153 - INFO - Build completed successfully.
+2024-08-29 10:44:40,159 - ERROR - Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 10:44:40,159 - ERROR - Error connecting to Infura: Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 10:45:44,244 - INFO - Encryption key loaded from secret.key
+2024-08-29 10:45:44,614 - INFO - Logging initialized.
+2024-08-29 10:45:44,614 - INFO - Starting main function...
+2024-08-29 10:45:44,725 - INFO - Build completed successfully.
+2024-08-29 10:45:44,731 - ERROR - Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 10:45:44,731 - ERROR - Error connecting to Infura: Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 10:46:50,425 - INFO - Encryption key loaded from secret.key
+2024-08-29 10:46:50,795 - INFO - Logging initialized.
+2024-08-29 10:46:50,795 - INFO - Starting main function...
+2024-08-29 10:46:50,907 - INFO - Build completed successfully.
+2024-08-29 10:46:50,913 - ERROR - Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 10:46:50,913 - ERROR - Error connecting to Infura: Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 10:53:20,644 - INFO - Encryption key loaded from secret.key
+2024-08-29 10:53:21,019 - INFO - Logging initialized.
+2024-08-29 10:53:21,019 - INFO - Starting main function...
+2024-08-29 10:53:21,169 - INFO - Build completed successfully.
+2024-08-29 10:53:21,175 - ERROR - Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 10:53:21,175 - ERROR - Connection error: Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 10:53:21,175 - ERROR - Failed to create wallet: Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 10:54:44,137 - INFO - Encryption key loaded from secret.key
+2024-08-29 10:54:44,530 - INFO - Logging initialized.
+2024-08-29 10:54:44,530 - INFO - Starting main function...
+2024-08-29 10:54:44,647 - INFO - Build completed successfully.
+2024-08-29 10:54:44,652 - ERROR - Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 10:54:44,652 - ERROR - Connection error: Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 10:54:44,652 - ERROR - Failed to create wallet: Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 10:55:09,482 - INFO - Encryption key loaded from secret.key
+2024-08-29 10:55:09,863 - INFO - Logging initialized.
+2024-08-29 10:55:09,863 - INFO - Starting main function...
+2024-08-29 10:55:09,922 - INFO - Build completed successfully.
+2024-08-29 10:55:09,927 - ERROR - Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 10:55:09,927 - ERROR - Connection error: Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 10:55:09,927 - ERROR - Failed to create wallet: Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 10:55:17,632 - INFO - Encryption key loaded from secret.key
+2024-08-29 10:55:17,961 - INFO - Logging initialized.
+2024-08-29 10:55:17,961 - INFO - Starting main function...
+2024-08-29 10:55:18,001 - INFO - Build completed successfully.
+2024-08-29 10:55:18,005 - ERROR - Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 10:55:18,005 - ERROR - Connection error: Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 10:55:18,005 - ERROR - Failed to create wallet: Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 11:00:32,183 - INFO - Encryption key loaded from secret.key
+2024-08-29 11:00:32,559 - INFO - Logging initialized.
+2024-08-29 11:00:32,559 - INFO - Starting main function...
+2024-08-29 11:00:32,706 - ERROR - Make failed
+2024-08-29 11:00:32,711 - ERROR - Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 11:00:32,711 - ERROR - Connection error: Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 11:00:32,711 - ERROR - Failed to create wallet: Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 11:01:09,721 - INFO - Encryption key loaded from secret.key
+2024-08-29 11:01:10,076 - INFO - Logging initialized.
+2024-08-29 11:01:10,076 - INFO - Starting main function...
+2024-08-29 11:01:10,197 - ERROR - Make failed
+2024-08-29 11:01:10,202 - ERROR - Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 11:01:10,202 - ERROR - Connection error: Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 11:01:10,202 - ERROR - Failed to create wallet: Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 11:04:25,283 - INFO - Encryption key loaded from secret.key
+2024-08-29 11:04:25,669 - INFO - Logging initialized.
+2024-08-29 11:04:25,669 - INFO - Starting main function...
+2024-08-29 11:04:25,749 - ERROR - Make failed
+2024-08-29 11:04:25,753 - ERROR - Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 11:04:25,753 - ERROR - Connection error: Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 11:04:25,753 - ERROR - Failed to create wallet: Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 11:12:15,178 - INFO - Encryption key loaded from secret.key
+2024-08-29 11:12:15,569 - INFO - Logging initialized.
+2024-08-29 11:12:15,570 - INFO - Starting main function...
+2024-08-29 11:12:15,570 - INFO - Starting the build process...
+2024-08-29 11:12:15,570 - INFO - Cleaning previous build directory...
+2024-08-29 11:12:15,570 - INFO - Running command: rm -rf build in /Users/apikorus/creed_wallet
+2024-08-29 11:12:15,574 - INFO - Command output: 
+2024-08-29 11:12:15,574 - ERROR - Command error (if any): 
+2024-08-29 11:12:15,574 - INFO - Creating new build directory...
+2024-08-29 11:12:15,574 - INFO - Running CMake...
+2024-08-29 11:12:15,601 - INFO - Running command: cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pybind11 .. in build
+2024-08-29 11:12:15,682 - INFO - Command output: -- Found pybind11: /opt/homebrew/opt/pybind11/include (found version "2.13.5")
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/apikorus/creed_wallet
+
+2024-08-29 11:12:15,682 - ERROR - Command error (if any): CMake Warning (dev) at CMakeLists.txt:8 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at CMakeLists.txt:9 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+
+2024-08-29 11:12:15,682 - INFO - Running Make...
+2024-08-29 11:12:15,682 - INFO - Running command: make in build
+2024-08-29 11:12:15,692 - ERROR - Command failed with return code 2
+2024-08-29 11:12:15,692 - ERROR - Command error output: make: *** No targets specified and no makefile found.  Stop.
+
+2024-08-29 11:12:15,692 - ERROR - Build failed: Command '['make']' returned non-zero exit status 2.
+2024-08-29 11:12:15,692 - ERROR - Build process failed: Command '['make']' returned non-zero exit status 2.
+2024-08-29 11:13:19,802 - INFO - Encryption key loaded from secret.key
+2024-08-29 11:13:20,050 - INFO - Logging initialized.
+2024-08-29 11:13:20,050 - INFO - Starting main function...
+2024-08-29 11:13:20,050 - INFO - Starting the build process...
+2024-08-29 11:13:20,050 - INFO - Cleaning previous build directory...
+2024-08-29 11:13:20,050 - INFO - Running command: rm -rf build in /Users/apikorus/creed_wallet
+2024-08-29 11:13:20,057 - INFO - Command output: 
+2024-08-29 11:13:20,057 - ERROR - Command error (if any): 
+2024-08-29 11:13:20,057 - INFO - Creating new build directory...
+2024-08-29 11:13:20,057 - INFO - Running CMake...
+2024-08-29 11:13:20,077 - INFO - Running command: cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pybind11 .. in build
+2024-08-29 11:13:20,416 - INFO - Command output: -- Found Python3: /opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12 (found suitable version "3.12.5", minimum required is "3.7") found components: Interpreter Development Development.Module Development.Embed
+-- Found pybind11: /opt/homebrew/opt/pybind11/include (found version "2.13.5")
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/apikorus/creed_wallet
+
+2024-08-29 11:13:20,416 - ERROR - Command error (if any): 
+2024-08-29 11:13:20,416 - INFO - Running Make...
+2024-08-29 11:13:20,416 - INFO - Running command: make in build
+2024-08-29 11:13:20,424 - ERROR - Command failed with return code 2
+2024-08-29 11:13:20,424 - ERROR - Command error output: make: *** No targets specified and no makefile found.  Stop.
+
+2024-08-29 11:13:20,424 - ERROR - Build failed: Command '['make']' returned non-zero exit status 2.
+2024-08-29 11:13:20,424 - ERROR - Build process failed: Command '['make']' returned non-zero exit status 2.
+2024-08-29 11:18:09,556 - INFO - Encryption key loaded from secret.key
+2024-08-29 11:18:09,917 - INFO - Logging initialized.
+2024-08-29 11:18:09,917 - INFO - Starting main function...
+2024-08-29 11:18:09,917 - INFO - Starting the build process...
+2024-08-29 11:18:09,917 - INFO - Cleaning previous build directory...
+2024-08-29 11:18:09,917 - INFO - Running command: rm -rf build in /Users/apikorus/creed_wallet
+2024-08-29 11:18:09,921 - INFO - Command output: 
+2024-08-29 11:18:09,921 - ERROR - Command error (if any): 
+2024-08-29 11:18:09,921 - INFO - Creating new build directory...
+2024-08-29 11:18:09,921 - INFO - Running CMake...
+2024-08-29 11:18:09,943 - INFO - Running command: cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pybind11 .. in build
+2024-08-29 11:18:10,063 - INFO - Command output: -- Found pybind11: /opt/homebrew/opt/pybind11/include (found version "2.13.5")
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/apikorus/creed_wallet
+
+2024-08-29 11:18:10,063 - ERROR - Command error (if any): 
+2024-08-29 11:18:10,063 - INFO - Running Make...
+2024-08-29 11:18:10,063 - INFO - Running command: make in build
+2024-08-29 11:18:10,071 - ERROR - Command failed with return code 2
+2024-08-29 11:18:10,071 - ERROR - Command error output: make: *** No targets specified and no makefile found.  Stop.
+
+2024-08-29 11:18:10,071 - ERROR - Build failed: Command '['make']' returned non-zero exit status 2.
+2024-08-29 11:18:10,071 - ERROR - Build process failed: Command '['make']' returned non-zero exit status 2.
+2024-08-29 11:20:08,320 - INFO - Encryption key loaded from secret.key
+2024-08-29 11:20:08,648 - INFO - Logging initialized.
+2024-08-29 11:20:08,648 - INFO - Starting main function...
+2024-08-29 11:20:08,648 - INFO - Starting the build process...
+2024-08-29 11:20:08,648 - INFO - Cleaning previous build directory...
+2024-08-29 11:20:08,648 - INFO - Running command: rm -rf build in /Users/apikorus/creed_wallet
+2024-08-29 11:20:08,654 - INFO - Command output: 
+2024-08-29 11:20:08,654 - ERROR - Command error (if any): 
+2024-08-29 11:20:08,654 - INFO - Creating new build directory...
+2024-08-29 11:20:08,654 - INFO - Running CMake...
+2024-08-29 11:20:08,676 - INFO - Running command: cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pybind11 .. in build
+2024-08-29 11:20:08,767 - INFO - Command output: -- Found Python3: /opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12 (found suitable version "3.12.5", minimum required is "3.7") found components: Interpreter Development.Module Development.Embed
+-- Found pybind11: /opt/homebrew/opt/pybind11/include (found version "2.13.5")
+-- CMake Version: 3.29.3
+-- Project: CreedWallet
+-- C++ Standard: 17
+-- Python Version: 3.12.5
+-- Eigen Version: 
+-- Pybind11 Version: 2.13.5
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/apikorus/creed_wallet
+
+2024-08-29 11:20:08,767 - ERROR - Command error (if any): 
+2024-08-29 11:20:08,767 - INFO - Running Make...
+2024-08-29 11:20:08,767 - INFO - Running command: make in build
+2024-08-29 11:20:08,775 - ERROR - Command failed with return code 2
+2024-08-29 11:20:08,775 - ERROR - Command error output: make: *** No targets specified and no makefile found.  Stop.
+
+2024-08-29 11:20:08,775 - ERROR - Build failed: Command '['make']' returned non-zero exit status 2.
+2024-08-29 11:20:08,775 - ERROR - Build process failed: Command '['make']' returned non-zero exit status 2.
+2024-08-29 11:28:29,841 - INFO - Encryption key loaded from secret.key
+2024-08-29 11:28:30,220 - INFO - Logging initialized.
+2024-08-29 11:28:30,220 - INFO - Starting main function...
+2024-08-29 11:28:30,220 - INFO - Starting the build process...
+2024-08-29 11:28:30,220 - INFO - Cleaning previous build directory...
+2024-08-29 11:28:30,220 - INFO - Running command: rm -rf build in /Users/apikorus/creed_wallet
+2024-08-29 11:28:30,227 - INFO - Command output: 
+2024-08-29 11:28:30,227 - ERROR - Command error (if any): 
+2024-08-29 11:28:30,227 - INFO - Creating new build directory...
+2024-08-29 11:28:30,227 - INFO - Running CMake...
+2024-08-29 11:28:30,252 - INFO - Running command: cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pybind11 .. in build
+2024-08-29 11:28:30,342 - INFO - Command output: -- Found pybind11: /opt/homebrew/opt/pybind11/include (found version "2.13.5")
+-- CMake Version: 3.29.3
+-- Project: CreedWallet
+-- C++ Standard: 17
+-- Python Version: 3.12.5
+-- Eigen3 Version: 3.4.0
+-- Pybind11 Version: 2.13.5
+-- Eigen3 Include Directory: /opt/homebrew/include/eigen3
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/apikorus/creed_wallet
+
+2024-08-29 11:28:30,343 - ERROR - Command error (if any): 
+2024-08-29 11:28:30,343 - INFO - Running Make...
+2024-08-29 11:28:30,343 - INFO - Running command: make in build
+2024-08-29 11:28:30,352 - ERROR - Command failed with return code 2
+2024-08-29 11:28:30,352 - ERROR - Command error output: make: *** No targets specified and no makefile found.  Stop.
+
+2024-08-29 11:28:30,352 - ERROR - Build failed: Command '['make']' returned non-zero exit status 2.
+2024-08-29 11:28:30,352 - ERROR - Build process failed: Command '['make']' returned non-zero exit status 2.
+2024-08-29 11:42:42,328 - INFO - Encryption key loaded from secret.key
+2024-08-29 11:42:43,135 - INFO - Logging initialized.
+2024-08-29 11:42:43,135 - INFO - Starting main function...
+2024-08-29 11:42:43,135 - INFO - Starting the build process...
+2024-08-29 11:42:43,135 - INFO - Cleaning previous build directory...
+2024-08-29 11:42:43,135 - INFO - Running command: rm -rf build in /Users/apikorus/creed_wallet
+2024-08-29 11:42:43,139 - INFO - Command output: 
+2024-08-29 11:42:43,139 - ERROR - Command error (if any): 
+2024-08-29 11:42:43,139 - INFO - Creating new build directory...
+2024-08-29 11:42:43,139 - INFO - Running CMake...
+2024-08-29 11:42:43,166 - INFO - Running command: cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pybind11 .. in build
+2024-08-29 11:42:43,270 - INFO - Command output: -- Found pybind11: /opt/homebrew/opt/pybind11/include (found version "2.13.5")
+-- CMake Version: 3.29.3
+-- Project: CreedWallet
+-- C++ Standard: 17
+-- Python Version: 3.12.5
+-- Eigen3 Version: 3.4.0
+-- Pybind11 Version: 2.13.5
+-- Eigen3 Include Directory: /opt/homebrew/include/eigen3
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/apikorus/creed_wallet
+
+2024-08-29 11:42:43,270 - ERROR - Command error (if any): 
+2024-08-29 11:42:43,270 - INFO - Running Make...
+2024-08-29 11:42:43,270 - INFO - Running command: make in build
+2024-08-29 11:42:43,278 - ERROR - Command failed with return code 2
+2024-08-29 11:42:43,278 - ERROR - Command error output: make: *** No targets specified and no makefile found.  Stop.
+
+2024-08-29 11:42:43,278 - ERROR - Build failed: Command '['make']' returned non-zero exit status 2.
+2024-08-29 11:42:43,278 - ERROR - Build process failed: Command '['make']' returned non-zero exit status 2.
+2024-08-29 11:49:49,596 - INFO - Encryption key loaded from secret.key
+2024-08-29 11:49:49,954 - INFO - Logging initialized.
+2024-08-29 11:49:49,954 - INFO - Starting main function...
+2024-08-29 11:49:49,954 - INFO - Starting the build process...
+2024-08-29 11:49:49,954 - INFO - Cleaning previous build directory: build
+2024-08-29 11:49:49,954 - INFO - Running command: rm -rf build in /Users/apikorus/creed_wallet
+2024-08-29 11:49:49,958 - INFO - Command output:
+
+2024-08-29 11:49:49,958 - INFO - Creating new build directory: build
+2024-08-29 11:49:49,958 - INFO - Running CMake...
+2024-08-29 11:49:49,979 - INFO - Running command: cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pybind11 .. in build
+2024-08-29 11:49:50,100 - INFO - Command output:
+-- Found pybind11: /opt/homebrew/opt/pybind11/include (found version "2.13.5")
+-- CMake Version: 3.29.3
+-- Project: CreedWallet
+-- C++ Standard: 17
+-- Python Version: 3.12.5
+-- Eigen3 Version: 3.4.0
+-- Pybind11 Version: 2.13.5
+-- Eigen3 Include Directory: /opt/homebrew/include/eigen3
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/apikorus/creed_wallet
+
+2024-08-29 11:49:50,100 - INFO - Running Make...
+2024-08-29 11:49:50,100 - INFO - Running command: make in build
+2024-08-29 11:49:50,108 - ERROR - Command 'make' failed with return code 2
+2024-08-29 11:49:50,108 - ERROR - Command output:
+
+2024-08-29 11:49:50,108 - ERROR - Command error output:
+make: *** No targets specified and no makefile found.  Stop.
+
+2024-08-29 11:49:50,108 - ERROR - Build process failed: Command '['make']' returned non-zero exit status 2.
+2024-08-29 11:49:50,109 - ERROR - Build process failed and main process aborted: Command '['make']' returned non-zero exit status 2.
+2024-08-29 11:51:56,441 - INFO - Encryption key loaded from secret.key
+2024-08-29 11:51:56,791 - INFO - Logging initialized.
+2024-08-29 11:51:56,791 - INFO - Starting main function...
+2024-08-29 11:51:56,791 - INFO - Starting the build process...
+2024-08-29 11:51:56,791 - INFO - Cleaning previous build directory: build
+2024-08-29 11:51:56,791 - INFO - Running command: rm -rf build in /Users/apikorus/creed_wallet
+2024-08-29 11:51:56,795 - INFO - Command output:
+
+2024-08-29 11:51:56,795 - INFO - Creating new build directory: build
+2024-08-29 11:51:56,795 - INFO - Running CMake...
+2024-08-29 11:51:56,817 - INFO - Running command: cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pybind11 .. in build
+2024-08-29 11:51:56,931 - INFO - Command output:
+-- Found pybind11: /opt/homebrew/opt/pybind11/include (found version "2.13.5")
+-- CMake Version: 3.29.3
+-- Project: CreedWallet
+-- C++ Standard: 17
+-- Python Version: 3.12.5
+-- Eigen3 Version: 3.4.0
+-- Pybind11 Version: 2.13.5
+-- Eigen3 Include Directory: /opt/homebrew/include/eigen3
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/apikorus/creed_wallet
+
+2024-08-29 11:51:56,931 - ERROR - Makefile not found in build. Build cannot proceed.
+2024-08-29 11:51:56,931 - ERROR - Build process failed: Makefile not found in build
+2024-08-29 11:51:56,931 - ERROR - Build process failed and main process aborted: Makefile not found in build
+2024-08-29 11:55:25,133 - INFO - Encryption key loaded from secret.key
+2024-08-29 11:55:25,505 - INFO - Logging initialized.
+2024-08-29 11:55:25,505 - INFO - Starting main function...
+2024-08-29 11:55:25,505 - INFO - Starting the build process...
+2024-08-29 11:55:25,505 - INFO - Cleaning previous build directory: build
+2024-08-29 11:55:25,505 - INFO - Running command: rm -rf build in /Users/apikorus/creed_wallet
+2024-08-29 11:55:25,508 - INFO - Command output:
+
+2024-08-29 11:55:25,508 - INFO - Creating new build directory: build
+2024-08-29 11:55:25,508 - INFO - Running CMake...
+2024-08-29 11:55:25,541 - INFO - Running command: cmake -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/pybind11 -S . -B build in .
+2024-08-29 11:55:26,265 - INFO - Command output:
+-- The CXX compiler identification is AppleClang 15.0.0.15000309
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: /opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12 (found suitable version "3.12.5", minimum required is "3.7") found components: Interpreter Development.Module Development.Embed
+-- Performing Test HAS_FLTO_THIN
+-- Performing Test HAS_FLTO_THIN - Success
+-- Found pybind11: /opt/homebrew/opt/pybind11/include (found version "2.13.5")
+-- CMake Version: 3.29.3
+-- Project: CreedWallet
+-- C++ Standard: 17
+-- Python Version: 3.12.5
+-- Eigen3 Version: 3.4.0
+-- Pybind11 Version: 2.13.5
+-- Eigen3 Include Directory: /opt/homebrew/include/eigen3
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/apikorus/creed_wallet/build
+
+2024-08-29 11:55:26,265 - INFO - Running Make...
+2024-08-29 11:55:26,265 - INFO - Running command: make in build
+2024-08-29 11:55:28,633 - INFO - Command output:
+[ 50%] Building CXX object CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o
+[100%] Linking CXX shared module lattice_crypto.cpython-312-darwin.so
+[100%] Built target lattice_crypto
+
+2024-08-29 11:55:28,633 - INFO - Build completed successfully.
+2024-08-29 11:55:28,633 - INFO - Attempting to connect to Infura with endpoint: wss://mainnet.infura.io/ws/v3/c41054ecfd8f45eb8b9952fad208f67a
+2024-08-29 11:55:28,638 - ERROR - Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 11:55:28,638 - ERROR - Connection error: Failed to connect to Infura's Ethereum mainnet.
+2024-08-29 11:55:28,638 - ERROR - Failed to create wallet: Failed to connect to Infura's Ethereum mainnet.

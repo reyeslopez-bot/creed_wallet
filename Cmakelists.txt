@@ -1,0 +1,50 @@
+cmake_minimum_required(VERSION 3.10)
+project(CreedWallet LANGUAGES CXX)
+
+# Ensure C++17 standard is used
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Ensure proper Python detection
+find_package(Python3 3.7 REQUIRED COMPONENTS Interpreter Development.Module Development.Embed)
+if (NOT Python3_FOUND)
+    message(FATAL_ERROR "Python 3.7 or higher is required but not found.")
+endif()
+include_directories(${Python3_INCLUDE_DIRS})
+link_directories(${Python3_LIBRARY_DIRS})
+
+# Find and include pybind11
+find_package(pybind11 REQUIRED PATHS /opt/homebrew/share/cmake/pybind11)
+if (NOT pybind11_FOUND)
+    message(FATAL_ERROR "pybind11 is required but not found.")
+endif()
+
+# Find Eigen
+find_package(Eigen3 3.4 REQUIRED NO_MODULE PATHS /opt/homebrew/opt/eigen)
+if (NOT Eigen3_FOUND)
+    message(FATAL_ERROR "Eigen3 is required but not found.")
+endif()
+include_directories(${EIGEN3_INCLUDE_DIR})
+
+# Add the Python module
+pybind11_add_module(lattice_crypto lattice_crypto_bindings.cpp)
+
+# Ensure Eigen includes are properly set up
+target_include_directories(lattice_crypto PRIVATE ${EIGEN3_INCLUDE_DIR})
+
+# Link against Python libraries
+target_link_libraries(lattice_crypto PRIVATE ${Python3_LIBRARIES})
+
+# Additional compiler options for robustness
+if (CMAKE_CXX_COMPILER_ID MATCHES "Clang" OR CMAKE_CXX_COMPILER_ID MATCHES "GNU")
+    target_compile_options(lattice_crypto PRIVATE -Wall -Wextra -Wpedantic)
+endif()
+
+# Output build configuration
+message(STATUS "CMake Version: ${CMAKE_VERSION}")
+message(STATUS "Project: ${PROJECT_NAME}")
+message(STATUS "C++ Standard: ${CMAKE_CXX_STANDARD}")
+message(STATUS "Python Version: ${Python3_VERSION}")
+message(STATUS "Eigen3 Version: ${EIGEN3_VERSION_STRING}")
+message(STATUS "Pybind11 Version: ${pybind11_VERSION}")
+message(STATUS "Eigen3 Include Directory: ${EIGEN3_INCLUDE_DIR}")
