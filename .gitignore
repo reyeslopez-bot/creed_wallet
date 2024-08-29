@@ -1,0 +1,63 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# macOS
+.DS_Store
+
+# Environments
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# CMake build files
+/build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Compiled binary artifacts
+*.o
+*.a
+*.out
+*.dylib
+
+# Logs
+*.log
+
+# Keys and secrets
+*.key
+secret.key
+
+# Python-specific
+*.egg-info/
+*.egg
+.Python
+*.pyo
+*.pyd
+*.swp
+
+# IDE-specific
+.idea/
+.vscode/
+*.iml
+
+# Lattice crypto build artifacts
+lattice_crypto.cpython-*.so
+
+# Documentation artifacts
+*.pdf
+*.docx
+
+# Test results
+test-results/
+
+# Custom artifacts
+*.encrypted
