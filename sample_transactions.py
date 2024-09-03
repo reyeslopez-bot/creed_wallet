@@ -6,7 +6,7 @@ from web3.exceptions import TransactionNotFound
 from encryption import encrypt_data, decrypt_data  # Ensure these functions are defined
 from variables import acct, INFURA_ENDPOINT
 from lattice_crypto import encrypt_lattice, decrypt_lattice  # Ensure these functions are defined
-from wallet_create import main as wallet_create
+from wallet_operations import main as wallet_create
 from logging_setup import setup_logging
 
 # Initialize logging

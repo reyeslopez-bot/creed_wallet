@@ -1,6 +1,7 @@
-from cryptography.fernet import Fernet
+# encryption.py
 import os
 import logging
+from cryptography.fernet import Fernet
 
 # Configure logging
 logging.basicConfig(
@@ -34,8 +35,13 @@ class Encrypt:
     @staticmethod
     def encrypt_message(key, message):
         """Encrypt a message using the provided Fernet key."""
+        if isinstance(message, str):
+            message = message.encode('utf-8')
+        elif not isinstance(message, bytes):
+            raise TypeError("Message must be a string or bytes")
+        
         f = Fernet(key)
-        encrypted_message = f.encrypt(message.encode())
+        encrypted_message = f.encrypt(message)
         logging.info("Message encrypted successfully.")
         return encrypted_message
 
