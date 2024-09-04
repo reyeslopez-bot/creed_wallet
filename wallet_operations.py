@@ -21,8 +21,8 @@ def create_wallet():
         logging.info(f"New Ethereum account created. Address: {acct.address}")
         print(f"New Ethereum account created. Address: {acct.address}")
 
-        private_key_bytes = bytes(acct._private_key)
-        return acct, private_key_bytes
+        # private_key_bytes is not returned
+        return acct
     except Exception as e:
         logging.error(f"An error occurred during wallet creation: {e}")
         raise

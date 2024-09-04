@@ -14,8 +14,8 @@ def main():
         return
 
     try:
-        # Create the wallet and get the encrypted private key
-        acct, private_key_bytes = create_wallet()
+        # No need to unpack `private_key_bytes` if it's not used
+        acct = create_wallet()
         logging.info(f"Wallet address: {acct.address}")
         print(f"Wallet address: {acct.address}")
 

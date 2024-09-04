@@ -5,7 +5,6 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
-                "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1",
                 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include",
                 "/opt/homebrew/include",
                 "/opt/homebrew/opt/pybind11/include",
