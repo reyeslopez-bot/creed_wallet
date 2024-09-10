@@ -1,9 +1,15 @@
-# wallet_operations.py
+import sys
+import os
 import logging
 import base64
 from eth_account import Account
-from encryption import Encrypt
+
+# Adjust path to make sure 'src/' can be found for 'lattice_crypto'
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
+
+# Now you can import 'lattice_crypto'
 from lattice_crypto import RingLWECrypto
+from encryption import Encrypt  # Assuming encryption is in the same src folder
 
 def create_wallet():
     from variables import INFURA_ENDPOINT
@@ -21,7 +27,7 @@ def create_wallet():
         logging.info(f"New Ethereum account created. Address: {acct.address}")
         print(f"New Ethereum account created. Address: {acct.address}")
 
-        # private_key_bytes is not returned
+        # Return the account object without exposing the private key directly
         return acct
     except Exception as e:
         logging.error(f"An error occurred during wallet creation: {e}")

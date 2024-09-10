@@ -24,8 +24,8 @@ if (NOT Eigen3_FOUND)
     message(FATAL_ERROR "Eigen3 is required but not found.")
 endif()
 
-# Add the Python module
-pybind11_add_module(lattice_crypto lattice_crypto_bindings.cpp)
+# Add the Python module for lattice_crypto
+pybind11_add_module(lattice_crypto src/lattice_crypto_bindings.cpp src/lattice_crypto.cpp)
 
 # Ensure Eigen includes are properly set up
 target_include_directories(lattice_crypto PRIVATE ${EIGEN3_INCLUDE_DIR})
@@ -46,3 +46,13 @@ message(STATUS "Python Version: ${Python3_VERSION}")
 message(STATUS "Eigen3 Version: ${EIGEN3_VERSION_STRING}")
 message(STATUS "Pybind11 Version: ${pybind11_VERSION}")
 message(STATUS "Eigen3 Include Directory: ${EIGEN3_INCLUDE_DIR}")
+
+# Add test_ring_lwe executable
+add_executable(test_ring_lwe tests/test_ring_lwe.cpp)
+
+# Link OpenSSL and Eigen to test_ring_lwe
+target_link_libraries(test_ring_lwe OpenSSL::SSL OpenSSL::Crypto Eigen3::Eigen)
+
+# Include directories for test_ring_lwe
+target_include_directories(test_ring_lwe PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
+target_include_directories(test_ring_lwe PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
