@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/apikorus/creed_wallet/lattice_crypto_bindings.cpp" "CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o" "gcc" "CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o.d"
+  "/Users/apikorus/creed_wallet/src/lattice_crypto.cpp" "CMakeFiles/lattice_crypto.dir/src/lattice_crypto.cpp.o" "gcc" "CMakeFiles/lattice_crypto.dir/src/lattice_crypto.cpp.o.d"
+  "/Users/apikorus/creed_wallet/src/lattice_crypto_bindings.cpp" "CMakeFiles/lattice_crypto.dir/src/lattice_crypto_bindings.cpp.o" "gcc" "CMakeFiles/lattice_crypto.dir/src/lattice_crypto_bindings.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

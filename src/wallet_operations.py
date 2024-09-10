@@ -8,7 +8,12 @@ from eth_account import Account
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
 
 # Now you can import 'lattice_crypto'
-from lattice_crypto import RingLWECrypto
+try:
+    from lattice_crypto import RingLWECrypto
+except ImportError:
+    logging.error("Failed to import 'lattice_crypto'. Make sure it is installed and accessible.")
+    raise
+
 from encryption import Encrypt  # Assuming encryption is in the same src folder
 
 def create_wallet():

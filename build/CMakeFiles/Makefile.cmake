@@ -80,8 +80,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake"
+  "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/FindOpenSSL.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/FindPackageMessage.cmake"
+  "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/FindPkgConfig.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/FindPython/Support.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/FindPython3.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake"
@@ -123,4 +125,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/lattice_crypto.dir/DependInfo.cmake"
+  "CMakeFiles/test_ring_lwe.dir/DependInfo.cmake"
   )

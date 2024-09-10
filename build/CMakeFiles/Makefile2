@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /Users/apikorus/creed_wallet/build
 
 # The main recursive "all" target.
 all: CMakeFiles/lattice_crypto.dir/all
+all: CMakeFiles/test_ring_lwe.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -72,6 +73,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/lattice_crypto.dir/clean
+clean: CMakeFiles/test_ring_lwe.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -81,12 +83,12 @@ clean: CMakeFiles/lattice_crypto.dir/clean
 CMakeFiles/lattice_crypto.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lattice_crypto.dir/build.make CMakeFiles/lattice_crypto.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lattice_crypto.dir/build.make CMakeFiles/lattice_crypto.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/apikorus/creed_wallet/build/CMakeFiles --progress-num=1,2 "Built target lattice_crypto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/apikorus/creed_wallet/build/CMakeFiles --progress-num=1,2,3 "Built target lattice_crypto"
 .PHONY : CMakeFiles/lattice_crypto.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lattice_crypto.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/apikorus/creed_wallet/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/apikorus/creed_wallet/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lattice_crypto.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/apikorus/creed_wallet/build/CMakeFiles 0
 .PHONY : CMakeFiles/lattice_crypto.dir/rule
@@ -99,6 +101,32 @@ lattice_crypto: CMakeFiles/lattice_crypto.dir/rule
 CMakeFiles/lattice_crypto.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lattice_crypto.dir/build.make CMakeFiles/lattice_crypto.dir/clean
 .PHONY : CMakeFiles/lattice_crypto.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_ring_lwe.dir
+
+# All Build rule for target.
+CMakeFiles/test_ring_lwe.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ring_lwe.dir/build.make CMakeFiles/test_ring_lwe.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ring_lwe.dir/build.make CMakeFiles/test_ring_lwe.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/apikorus/creed_wallet/build/CMakeFiles --progress-num=4,5,6 "Built target test_ring_lwe"
+.PHONY : CMakeFiles/test_ring_lwe.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_ring_lwe.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/apikorus/creed_wallet/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_ring_lwe.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/apikorus/creed_wallet/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_ring_lwe.dir/rule
+
+# Convenience name for target.
+test_ring_lwe: CMakeFiles/test_ring_lwe.dir/rule
+.PHONY : test_ring_lwe
+
+# clean rule for target.
+CMakeFiles/test_ring_lwe.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ring_lwe.dir/build.make CMakeFiles/test_ring_lwe.dir/clean
+.PHONY : CMakeFiles/test_ring_lwe.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

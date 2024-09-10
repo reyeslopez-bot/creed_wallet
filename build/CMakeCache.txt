@@ -206,6 +206,21 @@ CreedWallet_SOURCE_DIR:STATIC=/Users/apikorus/creed_wallet
 //The directory containing a CMake configuration file for Eigen3.
 Eigen3_DIR:PATH=/opt/homebrew/share/eigen3/cmake
 
+//Path to a library.
+OPENSSL_CRYPTO_LIBRARY:FILEPATH=/opt/homebrew/lib/libcrypto.dylib
+
+//Path to a file.
+OPENSSL_INCLUDE_DIR:PATH=/opt/homebrew/include
+
+//Path to a library.
+OPENSSL_SSL_LIBRARY:FILEPATH=/opt/homebrew/lib/libssl.dylib
+
+//Arguments to supply to pkg-config
+PKG_CONFIG_ARGN:STRING=
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=PKG_CONFIG_EXECUTABLE-NOTFOUND
+
 //The directory containing a CMake configuration file for pybind11.
 pybind11_DIR:PATH=/opt/homebrew/share/cmake/pybind11
 
@@ -339,16 +354,49 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding OpenSSL
+FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/opt/homebrew/lib/libcrypto.dylib][/opt/homebrew/include][c ][v3.3.1()]
 //Details about finding Python3
 FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12][/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12][/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/lib/libpython3.12.dylib][cfound components: Interpreter Development.Module Development.Embed ][v3.12.5(3.12)]
 //Test HAS_FLTO_THIN
 HAS_FLTO_THIN:INTERNAL=1
+//ADVANCED property for variable: OPENSSL_CRYPTO_LIBRARY
+OPENSSL_CRYPTO_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENSSL_INCLUDE_DIR
+OPENSSL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENSSL_SSL_LIBRARY
+OPENSSL_SSL_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_ARGN
+PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //Python executable during the last CMake run
 PYBIND11_PYTHON_EXECUTABLE_LAST:INTERNAL=/opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12
 //Python debug status
 PYTHON_IS_DEBUG:INTERNAL=0
 PYTHON_MODULE_DEBUG_POSTFIX:INTERNAL=
 PYTHON_MODULE_EXTENSION:INTERNAL=.cpython-312-darwin.so
+_OPENSSL_CFLAGS:INTERNAL=
+_OPENSSL_CFLAGS_I:INTERNAL=
+_OPENSSL_CFLAGS_OTHER:INTERNAL=
+_OPENSSL_FOUND:INTERNAL=
+_OPENSSL_INCLUDEDIR:INTERNAL=
+_OPENSSL_LIBDIR:INTERNAL=
+_OPENSSL_LIBS:INTERNAL=
+_OPENSSL_LIBS_L:INTERNAL=
+_OPENSSL_LIBS_OTHER:INTERNAL=
+_OPENSSL_LIBS_PATHS:INTERNAL=
+_OPENSSL_MODULE_NAME:INTERNAL=
+_OPENSSL_PREFIX:INTERNAL=
+_OPENSSL_STATIC_CFLAGS:INTERNAL=
+_OPENSSL_STATIC_CFLAGS_I:INTERNAL=
+_OPENSSL_STATIC_CFLAGS_OTHER:INTERNAL=
+_OPENSSL_STATIC_LIBDIR:INTERNAL=
+_OPENSSL_STATIC_LIBS:INTERNAL=
+_OPENSSL_STATIC_LIBS_L:INTERNAL=
+_OPENSSL_STATIC_LIBS_OTHER:INTERNAL=
+_OPENSSL_STATIC_LIBS_PATHS:INTERNAL=
+_OPENSSL_VERSION:INTERNAL=
 _PYBIND11_CROSSCOMPILING:INTERNAL=OFF
 _Python:INTERNAL=Python3
 //Compiler reason failure
@@ -368,6 +416,7 @@ _Python3_INTERPRETER_SIGNATURE:INTERNAL=4a88e62a1732031393af8d56e6300efe
 _Python3_LIBRARY_RELEASE:INTERNAL=/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/lib/libpython3.12.dylib
 //NumPy reason failure
 _Python3_NumPy_REASON_FAILURE:INTERNAL=
+__pkg_config_checked__OPENSSL:INTERNAL=1
 //Directories where pybind11 and possibly Python headers are located
 pybind11_INCLUDE_DIRS:INTERNAL=/opt/homebrew/include;/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12
 

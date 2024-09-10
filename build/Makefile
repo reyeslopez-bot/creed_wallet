@@ -129,29 +129,93 @@ lattice_crypto/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lattice_crypto.dir/build.make CMakeFiles/lattice_crypto.dir/build
 .PHONY : lattice_crypto/fast
 
-lattice_crypto_bindings.o: lattice_crypto_bindings.cpp.o
-.PHONY : lattice_crypto_bindings.o
+#=============================================================================
+# Target rules for targets named test_ring_lwe
+
+# Build rule for target.
+test_ring_lwe: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_ring_lwe
+.PHONY : test_ring_lwe
+
+# fast build rule for target.
+test_ring_lwe/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ring_lwe.dir/build.make CMakeFiles/test_ring_lwe.dir/build
+.PHONY : test_ring_lwe/fast
+
+src/lattice_crypto.o: src/lattice_crypto.cpp.o
+.PHONY : src/lattice_crypto.o
 
 # target to build an object file
-lattice_crypto_bindings.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lattice_crypto.dir/build.make CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o
-.PHONY : lattice_crypto_bindings.cpp.o
+src/lattice_crypto.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lattice_crypto.dir/build.make CMakeFiles/lattice_crypto.dir/src/lattice_crypto.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ring_lwe.dir/build.make CMakeFiles/test_ring_lwe.dir/src/lattice_crypto.cpp.o
+.PHONY : src/lattice_crypto.cpp.o
 
-lattice_crypto_bindings.i: lattice_crypto_bindings.cpp.i
-.PHONY : lattice_crypto_bindings.i
+src/lattice_crypto.i: src/lattice_crypto.cpp.i
+.PHONY : src/lattice_crypto.i
 
 # target to preprocess a source file
-lattice_crypto_bindings.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lattice_crypto.dir/build.make CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.i
-.PHONY : lattice_crypto_bindings.cpp.i
+src/lattice_crypto.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lattice_crypto.dir/build.make CMakeFiles/lattice_crypto.dir/src/lattice_crypto.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ring_lwe.dir/build.make CMakeFiles/test_ring_lwe.dir/src/lattice_crypto.cpp.i
+.PHONY : src/lattice_crypto.cpp.i
 
-lattice_crypto_bindings.s: lattice_crypto_bindings.cpp.s
-.PHONY : lattice_crypto_bindings.s
+src/lattice_crypto.s: src/lattice_crypto.cpp.s
+.PHONY : src/lattice_crypto.s
 
 # target to generate assembly for a file
-lattice_crypto_bindings.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lattice_crypto.dir/build.make CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.s
-.PHONY : lattice_crypto_bindings.cpp.s
+src/lattice_crypto.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lattice_crypto.dir/build.make CMakeFiles/lattice_crypto.dir/src/lattice_crypto.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ring_lwe.dir/build.make CMakeFiles/test_ring_lwe.dir/src/lattice_crypto.cpp.s
+.PHONY : src/lattice_crypto.cpp.s
+
+src/lattice_crypto_bindings.o: src/lattice_crypto_bindings.cpp.o
+.PHONY : src/lattice_crypto_bindings.o
+
+# target to build an object file
+src/lattice_crypto_bindings.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lattice_crypto.dir/build.make CMakeFiles/lattice_crypto.dir/src/lattice_crypto_bindings.cpp.o
+.PHONY : src/lattice_crypto_bindings.cpp.o
+
+src/lattice_crypto_bindings.i: src/lattice_crypto_bindings.cpp.i
+.PHONY : src/lattice_crypto_bindings.i
+
+# target to preprocess a source file
+src/lattice_crypto_bindings.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lattice_crypto.dir/build.make CMakeFiles/lattice_crypto.dir/src/lattice_crypto_bindings.cpp.i
+.PHONY : src/lattice_crypto_bindings.cpp.i
+
+src/lattice_crypto_bindings.s: src/lattice_crypto_bindings.cpp.s
+.PHONY : src/lattice_crypto_bindings.s
+
+# target to generate assembly for a file
+src/lattice_crypto_bindings.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lattice_crypto.dir/build.make CMakeFiles/lattice_crypto.dir/src/lattice_crypto_bindings.cpp.s
+.PHONY : src/lattice_crypto_bindings.cpp.s
+
+tests/test_ring_lwe.o: tests/test_ring_lwe.cpp.o
+.PHONY : tests/test_ring_lwe.o
+
+# target to build an object file
+tests/test_ring_lwe.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ring_lwe.dir/build.make CMakeFiles/test_ring_lwe.dir/tests/test_ring_lwe.cpp.o
+.PHONY : tests/test_ring_lwe.cpp.o
+
+tests/test_ring_lwe.i: tests/test_ring_lwe.cpp.i
+.PHONY : tests/test_ring_lwe.i
+
+# target to preprocess a source file
+tests/test_ring_lwe.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ring_lwe.dir/build.make CMakeFiles/test_ring_lwe.dir/tests/test_ring_lwe.cpp.i
+.PHONY : tests/test_ring_lwe.cpp.i
+
+tests/test_ring_lwe.s: tests/test_ring_lwe.cpp.s
+.PHONY : tests/test_ring_lwe.s
+
+# target to generate assembly for a file
+tests/test_ring_lwe.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ring_lwe.dir/build.make CMakeFiles/test_ring_lwe.dir/tests/test_ring_lwe.cpp.s
+.PHONY : tests/test_ring_lwe.cpp.s
 
 # Help Target
 help:
@@ -162,9 +226,16 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... lattice_crypto"
-	@echo "... lattice_crypto_bindings.o"
-	@echo "... lattice_crypto_bindings.i"
-	@echo "... lattice_crypto_bindings.s"
+	@echo "... test_ring_lwe"
+	@echo "... src/lattice_crypto.o"
+	@echo "... src/lattice_crypto.i"
+	@echo "... src/lattice_crypto.s"
+	@echo "... src/lattice_crypto_bindings.o"
+	@echo "... src/lattice_crypto_bindings.i"
+	@echo "... src/lattice_crypto_bindings.s"
+	@echo "... tests/test_ring_lwe.o"
+	@echo "... tests/test_ring_lwe.i"
+	@echo "... tests/test_ring_lwe.s"
 .PHONY : help
 
 

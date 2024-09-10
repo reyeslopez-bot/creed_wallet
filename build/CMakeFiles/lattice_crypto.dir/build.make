@@ -69,31 +69,47 @@ include CMakeFiles/lattice_crypto.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/lattice_crypto.dir/flags.make
 
-CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o: CMakeFiles/lattice_crypto.dir/flags.make
-CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o: /Users/apikorus/creed_wallet/lattice_crypto_bindings.cpp
-CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o: CMakeFiles/lattice_crypto.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/apikorus/creed_wallet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o -MF CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o.d -o CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o -c /Users/apikorus/creed_wallet/lattice_crypto_bindings.cpp
+CMakeFiles/lattice_crypto.dir/src/lattice_crypto_bindings.cpp.o: CMakeFiles/lattice_crypto.dir/flags.make
+CMakeFiles/lattice_crypto.dir/src/lattice_crypto_bindings.cpp.o: /Users/apikorus/creed_wallet/src/lattice_crypto_bindings.cpp
+CMakeFiles/lattice_crypto.dir/src/lattice_crypto_bindings.cpp.o: CMakeFiles/lattice_crypto.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/apikorus/creed_wallet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lattice_crypto.dir/src/lattice_crypto_bindings.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lattice_crypto.dir/src/lattice_crypto_bindings.cpp.o -MF CMakeFiles/lattice_crypto.dir/src/lattice_crypto_bindings.cpp.o.d -o CMakeFiles/lattice_crypto.dir/src/lattice_crypto_bindings.cpp.o -c /Users/apikorus/creed_wallet/src/lattice_crypto_bindings.cpp
 
-CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/apikorus/creed_wallet/lattice_crypto_bindings.cpp > CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.i
+CMakeFiles/lattice_crypto.dir/src/lattice_crypto_bindings.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lattice_crypto.dir/src/lattice_crypto_bindings.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/apikorus/creed_wallet/src/lattice_crypto_bindings.cpp > CMakeFiles/lattice_crypto.dir/src/lattice_crypto_bindings.cpp.i
 
-CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/apikorus/creed_wallet/lattice_crypto_bindings.cpp -o CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.s
+CMakeFiles/lattice_crypto.dir/src/lattice_crypto_bindings.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lattice_crypto.dir/src/lattice_crypto_bindings.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/apikorus/creed_wallet/src/lattice_crypto_bindings.cpp -o CMakeFiles/lattice_crypto.dir/src/lattice_crypto_bindings.cpp.s
+
+CMakeFiles/lattice_crypto.dir/src/lattice_crypto.cpp.o: CMakeFiles/lattice_crypto.dir/flags.make
+CMakeFiles/lattice_crypto.dir/src/lattice_crypto.cpp.o: /Users/apikorus/creed_wallet/src/lattice_crypto.cpp
+CMakeFiles/lattice_crypto.dir/src/lattice_crypto.cpp.o: CMakeFiles/lattice_crypto.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/apikorus/creed_wallet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lattice_crypto.dir/src/lattice_crypto.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lattice_crypto.dir/src/lattice_crypto.cpp.o -MF CMakeFiles/lattice_crypto.dir/src/lattice_crypto.cpp.o.d -o CMakeFiles/lattice_crypto.dir/src/lattice_crypto.cpp.o -c /Users/apikorus/creed_wallet/src/lattice_crypto.cpp
+
+CMakeFiles/lattice_crypto.dir/src/lattice_crypto.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lattice_crypto.dir/src/lattice_crypto.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/apikorus/creed_wallet/src/lattice_crypto.cpp > CMakeFiles/lattice_crypto.dir/src/lattice_crypto.cpp.i
+
+CMakeFiles/lattice_crypto.dir/src/lattice_crypto.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lattice_crypto.dir/src/lattice_crypto.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/apikorus/creed_wallet/src/lattice_crypto.cpp -o CMakeFiles/lattice_crypto.dir/src/lattice_crypto.cpp.s
 
 # Object files for target lattice_crypto
 lattice_crypto_OBJECTS = \
-"CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o"
+"CMakeFiles/lattice_crypto.dir/src/lattice_crypto_bindings.cpp.o" \
+"CMakeFiles/lattice_crypto.dir/src/lattice_crypto.cpp.o"
 
 # External object files for target lattice_crypto
 lattice_crypto_EXTERNAL_OBJECTS =
 
-lattice_crypto.cpython-312-darwin.so: CMakeFiles/lattice_crypto.dir/lattice_crypto_bindings.cpp.o
+lattice_crypto.cpython-312-darwin.so: CMakeFiles/lattice_crypto.dir/src/lattice_crypto_bindings.cpp.o
+lattice_crypto.cpython-312-darwin.so: CMakeFiles/lattice_crypto.dir/src/lattice_crypto.cpp.o
 lattice_crypto.cpython-312-darwin.so: CMakeFiles/lattice_crypto.dir/build.make
 lattice_crypto.cpython-312-darwin.so: CMakeFiles/lattice_crypto.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/apikorus/creed_wallet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared module lattice_crypto.cpython-312-darwin.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/apikorus/creed_wallet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared module lattice_crypto.cpython-312-darwin.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lattice_crypto.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -8,7 +8,8 @@
                 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include",
                 "/opt/homebrew/include",
                 "/opt/homebrew/opt/pybind11/include",
-                "/opt/homebrew/opt/eigen/include/eigen3"
+                "/opt/homebrew/opt/eigen/include/eigen3",
+                "/opt/homebrew/Cellar/python@3.12/3.12.5/Frameworks/Python.framework/Versions/3.12/include/python3.12"  // Add this
             ],
             "defines": [],
             "macFrameworkPath": [

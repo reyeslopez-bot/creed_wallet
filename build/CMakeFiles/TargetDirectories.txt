@@ -1,3 +1,4 @@
 /Users/apikorus/creed_wallet/build/CMakeFiles/lattice_crypto.dir
+/Users/apikorus/creed_wallet/build/CMakeFiles/test_ring_lwe.dir
 /Users/apikorus/creed_wallet/build/CMakeFiles/edit_cache.dir
 /Users/apikorus/creed_wallet/build/CMakeFiles/rebuild_cache.dir

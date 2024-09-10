@@ -5,12 +5,17 @@ project(CreedWallet LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+
 # Ensure proper Python detection
 find_package(Python3 3.12 REQUIRED COMPONENTS Interpreter Development.Module Development.Embed)
 if (NOT Python3_FOUND)
     message(FATAL_ERROR "Python 3.12 or higher is required but not found.")
 endif()
+
+# Include Python headers
 include_directories(${Python3_INCLUDE_DIRS})
+
+include_directories(/opt/homebrew/Cellar/python@3.12/3.12.5/Frameworks/Python.framework/Versions/3.12/include/python3.12)
 
 # Find and include pybind11
 find_package(pybind11 REQUIRED)
@@ -18,20 +23,22 @@ if (NOT pybind11_FOUND)
     message(FATAL_ERROR "pybind11 is required but not found.")
 endif()
 
-# Find Eigen
+# Find Eigen and explicitly set the include path
 find_package(Eigen3 3.4 REQUIRED NO_MODULE)
+
 if (NOT Eigen3_FOUND)
     message(FATAL_ERROR "Eigen3 is required but not found.")
 endif()
 
+# Add the Eigen include directory explicitly
+include_directories(/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3)
+
 # Add the Python module for lattice_crypto
 pybind11_add_module(lattice_crypto src/lattice_crypto_bindings.cpp src/lattice_crypto.cpp)
 
-# Ensure Eigen includes are properly set up
-target_include_directories(lattice_crypto PRIVATE ${EIGEN3_INCLUDE_DIR})
-
 # Link against Python libraries via pybind11
 target_link_libraries(lattice_crypto PRIVATE pybind11::module)
+target_include_directories(lattice_crypto PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # Additional compiler options for robustness
 if (CMAKE_CXX_COMPILER_ID MATCHES "Clang" OR CMAKE_CXX_COMPILER_ID MATCHES "GNU")
@@ -48,10 +55,17 @@ message(STATUS "Pybind11 Version: ${pybind11_VERSION}")
 message(STATUS "Eigen3 Include Directory: ${EIGEN3_INCLUDE_DIR}")
 
 # Add test_ring_lwe executable
-add_executable(test_ring_lwe tests/test_ring_lwe.cpp)
+add_executable(test_ring_lwe tests/test_ring_lwe.cpp src/lattice_crypto.cpp)
 
-# Link OpenSSL and Eigen to test_ring_lwe
-target_link_libraries(test_ring_lwe OpenSSL::SSL OpenSSL::Crypto Eigen3::Eigen)
+# Find OpenSSL package
+find_package(OpenSSL REQUIRED)
+
+if (NOT OpenSSL_FOUND)
+    message(FATAL_ERROR "OpenSSL not found")
+endif()
+
+# Linking OpenSSL libraries to the test executable
+target_link_libraries(test_ring_lwe OpenSSL::SSL OpenSSL::Crypto)
 
 # Include directories for test_ring_lwe
 target_include_directories(test_ring_lwe PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
