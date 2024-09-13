@@ -8,22 +8,57 @@
 #include <cmath>
 #include <stdexcept>
 
-// Start logging to a file
-std::ofstream log_file("crypto_log.txt");
+#if __has_include(<filesystem>)
+  #include <filesystem>
+  namespace fs = std::filesystem;
+#elif __has_include(<experimental/filesystem>)
+  #include <experimental/filesystem>
+  namespace fs = std::experimental::filesystem;
+#else
+  #error "No filesystem support"
+#endif
+
+// Global log file variable
+std::ofstream log_file;
+
+void init_logging() {
+    // Ensure log directory exists
+    try {
+        if (!fs::create_directories("logs")) {
+            std::cerr << "Log directory already exists or failed to create." << std::endl;
+        }
+    } catch (const fs::filesystem_error& e) {
+        std::cerr << "Filesystem error: " << e.what() << std::endl;
+        exit(EXIT_FAILURE);  // Exit if the log directory can't be created
+    }
+
+    // Start logging to a file inside the logs directory
+    log_file.open("logs/crypto_log.txt", std::ios::out | std::ios::app);  // Open in append mode
+
+    if (!log_file.is_open()) {
+        std::cerr << "Failed to open log file." << std::endl;
+        exit(EXIT_FAILURE);  // Exit if the log file can't be opened
+    }
+
+    log_file << "Logging started." << std::endl;
+    log_file.flush();  // Flush immediately after writing
+}
 
 namespace lattice_crypto {
 
-// Helper function to compute modular exponentiation
+// Modular exponentiation function with base, exponent, and modulo
 int mod_exp(int base, int exp, int mod) {
-    log_file << "Modular exponentiation started for base: " << base << ", exp: " << exp << ", mod: " << mod << std::endl;
+    log_file << "Modular exponentiation started: base=" << base << ", exp=" << exp << ", mod=" << mod << std::endl;
+    log_file.flush();  // Flush the log after each log entry
     int result = 1;
-    base %= mod;
+    base %= mod;  // Always reduce base modulo
     while (exp > 0) {
         if (exp & 1) result = (1LL * result * base) % mod;
         base = (1LL * base * base) % mod;
         exp >>= 1;
     }
     log_file << "Modular exponentiation result: " << result << std::endl;
+    log_file.flush();
     return result;
 }
 
@@ -133,7 +168,6 @@ Eigen::MatrixXi KeyGenerator::polynomial_multiply(const Eigen::MatrixXi& a, cons
         log_file << "Matrix dimensions are not compatible for multiplication." << std::endl;
         throw std::runtime_error("Matrix dimensions are not compatible for multiplication.");
     }
-
     int resultSize = 1;
     while (resultSize < a.cols() + b.rows() - 1) {
         resultSize <<= 1;  // Ensure resultSize is a power of 2
